@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             {{ config('app.name', 'ArcadiaHub') }}
@@ -20,10 +20,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="Membership.html">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#investor">Become an Investor</a>
+                </li>
                 @if (Route::has('register'))
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                 </li>
+
                 @endif
                 @else
                 <li class="nav-item dropdown">
@@ -44,12 +51,7 @@
                     </div>
                 </li>
                 @endguest
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#investor">Become an Investor</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="Membership.html">Membership</a>
-                </li>
+
             </ul>
         </div>
     </div>
