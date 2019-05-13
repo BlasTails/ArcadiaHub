@@ -26,8 +26,8 @@ Route::get('/create', 'HomeController@create');
 
 
 Route::get('/','PagesController@index');
-Route::get('/sign', 'PagesController@sign');
-Route::get('/StartupDash', 'PagesController@StartupDash');
+//Route::get('/sign', 'PagesController@sign');
+//Route::get('/StartupDash', 'PagesController@StartupDash');
 //Route::get('/create', 'PagesController@create');
 //Route::get('/posts/StartupProfile', 'PagesController@StartupProfile');
 
@@ -40,4 +40,4 @@ Route::get('/sign', function () {
 */
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index');
