@@ -1,0 +1,115 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+
+/* Makes text all the same, but there is a problem when you click into the text fields for the sign in or register.
+   I think it conflicts with the existing colour changes in this CSS file */
+
+/****************************************************************************************************/
+/*                                          Navigation Bar                                          */
+/****************************************************************************************************/
+
+#body {
+    background-color: white;
+}
+
+#mainNav {
+  min-height: 56px;
+  background-color: white;
+  /*background-color: #F4DD08;*/
+  /*background-image: linear-gradient(to bottom, #FFF50F, #FFFEF1);*/
+}
+
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: #64a19d;
+    border: 1px solid #64a19d;
+}
+
+.home-container {
+    padding-top: 2.5%;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-image: url("../img/light.jpeg");
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    padding: 15rem 0;
+    /*background-color: #FFFEF1;*/
+    background-image: url("../img/blur-crowd-indoors-950902.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+
+/****************************************************************************************************************************/
+/*                                                        Form																 /
+/****************************************************************************************************************************/
+
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.containerform{
+  padding: 16px;
+  width: 650px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  /*background-color: #4CAF50;*/
+  background-color: #F4DD08;
+  color: black;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
