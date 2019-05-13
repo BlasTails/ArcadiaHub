@@ -52,17 +52,28 @@
             <div class="panel panel-default">
                 <div class="col-md-12 commentsblock border-top">
                     <div class="mx-auto text-center"><br/><h1><p>Your Projects</p></h1></div>
+
+
+
                     @if(count($posts) > 0)
+
+
                     @foreach($posts as $post)
                     <div class="well">
                         <h3><a href="/test/public/posts/{{$post->id}}">{{$post->title}}</a></h3>
                         <small>Written on {{$post->created_at}}</small>
                     </div><br>
                     @endforeach
-                    {{$posts->links()}}
+
                     @else
-                    <p>No Project found</p>
+                    <p>You have no posts</p>
                     @endif
+
+
+
+
+
+
 
                     <div class="card h-100">
                         <a href="#"><img class="card-img-top" src="https://i.imgur.com/9otqt4K.jpg" alt=""></a>

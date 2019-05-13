@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\User;
 use DB;
 class PostsController extends Controller
 {
@@ -20,8 +21,11 @@ class PostsController extends Controller
         //$posts = Post::all();
         //$posts = Post::orderBy('created_at','desc')->take(1)->get();
         //$posts = Post::orderBy('created_at','desc')->get();
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id);
+        
         $posts = Post::orderBy('created_at','desc')->paginate(5);
-        return view('posts.StartupProfile')->with('posts', $posts);
+        return view('posts.StartupProfile')->with('posts', $user->posts);
     }
 
     /**
