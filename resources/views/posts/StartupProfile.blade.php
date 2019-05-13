@@ -55,7 +55,7 @@
                     @if(count($posts) > 0)
                     @foreach($posts as $post)
                     <div class="well">
-                        <h3><a href="/blog/public/posts/{{$post->id}}">{{$post->title}}</a></h3>
+                        <h3><a href="/test/public/posts/{{$post->id}}">{{$post->title}}</a></h3>
                         <small>Written on {{$post->created_at}}</small>
                     </div><br>
                     @endforeach

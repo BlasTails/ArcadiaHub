@@ -6,7 +6,7 @@
             <h1>{{$post->title}}</h1>
         </div>
         <div class="col-sm-2">
-            <a href="/blog/public/posts/{{$post->id}}/edit" style="padding-top: 5px ;padding-bottom: 5px" class="btn btn-primary" role="button"><i class="fa fa-wrench" aria-hidden="true"></i> edit project</a>
+            <a href="/test/public/posts/{{$post->id}}/edit" style="padding-top: 5px ;padding-bottom: 5px" class="btn btn-primary" role="button"><i class="fa fa-wrench" aria-hidden="true"></i> edit project</a>
         </div>
         <div class="col-sm-2" >
             {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right'])!!}

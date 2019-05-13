@@ -56,7 +56,7 @@
     </div>
     <div class="row">
         <div class="col-sm-6 text-center" style="padding-top: 15px">
-            <a href="Profile.html" class="btn btn-warning" role="button" >Cancel</a>       
+            <a href="/test/public/posts/{{$post->id}}" class="btn btn-warning" role="button" >Cancel</a>       
         </div>
         <div class="col-sm-6 text-center" style="padding-top: 15px">
             {{Form::hidden('_method', 'PUT')}}
