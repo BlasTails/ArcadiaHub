@@ -6,7 +6,7 @@
             <h1>New Project</h1>
         </div>
     </div>
-    {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST']) !!}
+    {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
 
     <div class="row" style="padding-top: 25px">
         <div class="col-md-3 text-left" style="padding-top:10px">
@@ -20,9 +20,9 @@
         <div class="col-md-3">
             <label style="padding-top: 15px" for="Project_Title"><h4>Project Picture</h4></label>
         </div>
-        <div class="col-md-4" style="margin-left: 8px; margin-top: 5px" >
-            <input type="file" class="custom-file-input" id="customFile">
-            <label style="margin: inherit" class="custom-file-label" for="customFile">Choose file</label>
+        <div class="form-group" style="margin-left: 8px; margin-top: 5px" >
+            {{Form::file('cover_image')}}
+            
         </div>
     </div>
     <div class="row">

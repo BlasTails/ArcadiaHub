@@ -59,48 +59,51 @@
 
 
                     @foreach($posts as $post)
-                    <div class="well">
-                        <h3><a href="/test/public/posts/{{$post->id}}">{{$post->title}}</a></h3>
-                        <small>Written on {{$post->created_at}}</small>
-                    </div><br>
-                    @endforeach
-
-                    @else
-                    <p>You have no posts</p>
-                    @endif
-
-
-
-
-
-
-
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="https://i.imgur.com/9otqt4K.jpg" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="Project.html">Office Rent</a>
-                            </h4>
-                            <p class="card-text">Renting office space out to small businesses that need to setup meetings. </p>
+            
+                        <div class="card h-100">
+                            <img class="card-img-top" src="storage/cover_images/{{$post->cover_image}}" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="/test/public/posts/{{$post->id}}">{{$post->title}}</a>
+                                </h4>
+                                
+                                <small>Written on {{$post->created_at}}</small>
+                            </div>
                         </div>
-                    </div><br>
-                </div>
-                <div class="col-md-12 commentsblock border-top">
-                    <div class="card h-100">
-                        <a href="Profile.html"><img class="card-img-top" src="https://i.imgur.com/OxSKI1d.jpg" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="Project.html">Indie Game</a>
-                            </h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-                        </div>
-                    </div><br>
-                </div>
-                <div class="col-md-12 commentsblock border-top">
 
-                </div>
-            </div>      
-        </div>
+                </div><br>
+                @endforeach
+
+                @else
+                <p>You have no posts</p>
+                @endif
+
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="https://i.imgur.com/9otqt4K.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="Project.html">Office Rent</a>
+                        </h4>
+                        <p class="card-text">Renting office space out to small businesses that need to setup meetings. </p>
+                    </div>
+                </div><br>
+            </div>
+            <div class="col-md-12 commentsblock border-top">
+                <div class="card h-100">
+                    <a href="Profile.html"><img class="card-img-top" src="https://i.imgur.com/OxSKI1d.jpg" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="Project.html">Indie Game</a>
+                        </h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+                    </div>
+                </div><br>
+            </div>
+            <div class="col-md-12 commentsblock border-top">
+
+            </div>
+        </div>      
     </div>
+</div>
 </div>
 @endsection
