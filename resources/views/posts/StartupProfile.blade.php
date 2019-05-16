@@ -66,7 +66,7 @@
                                 <h4 class="card-title">
                                     <a href="/test/public/posts/{{$post->id}}">{{$post->title}}</a>
                                 </h4>
-                                
+                                <p class="card-text">{{$post->description}}</p>
                                 <small>Written on {{$post->created_at}}</small>
                             </div>
                         </div>

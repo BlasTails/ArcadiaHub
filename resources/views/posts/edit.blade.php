@@ -40,10 +40,10 @@
     </div>
     <div class="row" style="padding-top: 25px">
         <div class="col-md-3">
-            <label style="padding-top: 15px" for="Project_Title"><h4>Description Heading</h4></label>
+            <label style="padding-top: 15px" for="Project_Title"><h4>{{Form::label('description','Description Heading ')}}</h4></label>
         </div>
         <div class="col-md-4 text-left">
-            <input style="margin: inherit" type="text" class="form-control" id="usr">
+            {{Form::text('description', $post->description, ['class' => 'form-control', 'placeholder'=> ' Description Heading '])}}
         </div>
     </div>
     <div class="row">

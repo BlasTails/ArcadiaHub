@@ -51,7 +51,7 @@
             
             <hr>
             <div class="descriptionheading text-left">
-                <h3> Description Heading </h3>
+                <h3> {{$post->description}}</h3>
             </div>
             <hr>
             <div clas="container" style="text-align: left;height: 200px;">
