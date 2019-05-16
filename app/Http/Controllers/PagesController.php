@@ -19,9 +19,9 @@ class PagesController extends Controller
     }
     
     //Startup Dash
-    public function StartupDash()
+    public function Membership()
     {
-        return view('pages.StartupDash');
+        return view('pages.Membership');
     }
     
     
