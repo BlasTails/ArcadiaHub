@@ -50,16 +50,10 @@
         </div>
         <div class="col-md-8 col-sm-12 pull-left posttimeline">
             <div class="panel panel-default">
-                <div class="col-md-12 commentsblock border-top">
+                <div class="c,arol-md-12 commentsblock border-top">
                     <div class="mx-auto text-center"><br/><h1><p>Your Projects</p></h1></div>
-
-
-
                     @if(count($posts) > 0)
-
-
-                    @foreach($posts as $post)
-            
+                        @foreach($posts as $post)
                         <div class="card h-100">
                             <img class="card-img-top" src="storage/cover_images/{{$post->cover_image}}" alt="">
                             <div class="card-body">
@@ -69,41 +63,23 @@
                                 <p class="card-text">{{$post->description}}</p>
                                 <small>Written on {{$post->created_at}}</small>
                             </div>
+                            
                         </div>
-
-                </div><br>
-                @endforeach
-
-                @else
-                <p>You have no posts</p>
-                @endif
-
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="https://i.imgur.com/9otqt4K.jpg" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="Project.html">Office Rent</a>
-                        </h4>
-                        <p class="card-text">Renting office space out to small businesses that need to setup meetings. </p>
-                    </div>
-                </div><br>
-            </div>
-            <div class="col-md-12 commentsblock border-top">
-                <div class="card h-100">
-                    <a href="Profile.html"><img class="card-img-top" src="https://i.imgur.com/OxSKI1d.jpg" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="Project.html">Indie Game</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-                    </div>
-                </div><br>
-            </div>
-            <div class="col-md-12 commentsblock border-top">
-
+                        <br>
+                        
+                        @endforeach
+                    @else
+                        <hr>
+                        <h5 style="text-align: center; margin-bottom: 25px;">You have no Projects</h5>
+                        <hr>
+                    @endif
+                    <div class="card h-100" style="padding-top:15px">
+                            {{$posts->links()}}
+                        </div>
+                </div>
             </div>
         </div>      
     </div>
 </div>
-</div>
+
 @endsection
