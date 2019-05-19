@@ -73,9 +73,9 @@
                         <h5 style="text-align: center; margin-bottom: 25px;">You have no Projects</h5>
                         <hr>
                     @endif
-                    <div class="card h-100" style="padding-top:15px">
+                    
                             {{$posts->links()}}
-                        </div>
+                       
                 </div>
             </div>
         </div>      
