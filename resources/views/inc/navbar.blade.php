@@ -20,9 +20,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </li>
-                <!--<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="{{URL::asset('/Membership')}}">Membership</a>
-                </li>-->
+                </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#investor">Investor Registration</a>
                 </li>
