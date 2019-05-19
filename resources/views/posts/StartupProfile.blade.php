@@ -68,13 +68,14 @@
                         <br>
                         
                         @endforeach
+                    {{$posts->links()}}  
                     @else
                         <hr>
                         <h5 style="text-align: center; margin-bottom: 25px;">You have no Projects</h5>
                         <hr>
                     @endif
                     
-                            {{$posts->links()}}
+                          
                        
                 </div>
             </div>

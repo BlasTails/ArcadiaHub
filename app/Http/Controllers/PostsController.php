@@ -32,14 +32,11 @@ class PostsController extends Controller
         //$post = DB::select('SELECT * FROM posts');
         //$posts = Post::all();
         //$posts = Post::orderBy('created_at','desc')->take(1)->get();
-        //$posts = Post::orderBy('created_at','desc')->get();
-
-        
+        $posts = Post::orderBy('created_at','desc')->get();
         $user_id = auth()->user()->id;
-        $user = User::find($user_id);
-        $posts = Post::orderBy('created_at','desc')->paginate(3);
-
-        return view('posts.StartupProfile')->with('posts', $posts, $user->posts);
+        $user = User::find($user_id)->posts()->$posts = Post::orderBy('created_at','desc')->paginate(2);
+        
+        return view('posts.StartupProfile')->with('posts', $user);
     }
 
     /**
