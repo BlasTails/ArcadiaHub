@@ -46,3 +46,14 @@ Route::get('/sign', function () {
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
+
+//Route to Investor Dashboard
+Route::get('/InvestorDashboard', function () {
+    return view('InvestorDashboard');
+});
+
+//Route to Investor Profile
+Route::get('/InvestorProfile', function () {
+    return view('investorPosts.InvestorProfile');
+});
+
