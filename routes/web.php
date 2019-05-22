@@ -33,6 +33,11 @@ Route::get('/Membership', 'PagesController@Membership');
 
 Route::resource('posts', 'PostsController');
 
+//Testing routes for investor register
+//Route::get('/investorRegister', 'PagesController@investorRegister');
+//Route::view('/investorRegister', 'investorRegister');
+
+
 /*
 Route::get('/sign', function () {
     return view('sign');

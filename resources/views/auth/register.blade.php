@@ -33,6 +33,20 @@
                             </span>
                             @endif
 
+                            <label for="email">{{ __('Account Type') }}</label>
+
+                            <br>
+                            <br>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="startup" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="startup">Startup</label>
+                              </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="investor" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="investor">Investor</label>
+                              </div>
+                            <br>
+                            <br>
                             <label for="password">{{ __('Password') }}</label>
                             <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required autocomplete="new-password">
                             @if ($errors->has('password'))

@@ -24,6 +24,13 @@ class PagesController extends Controller
         return view('pages.Membership');
     }
     
+
+    //Testing routes for investor register
+    //Investor Register
+    /*public function investorRegister()
+    {
+        return view('auth.investorRegister');
+    }*/
     
     
 }
