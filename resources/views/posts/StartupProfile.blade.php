@@ -50,7 +50,7 @@
         </div>
         <div class="col-md-8 col-sm-12 pull-left posttimeline">
             <div class="panel panel-default">
-                <div class="c,arol-md-12 commentsblock border-top">
+                <div class="c,arol-md-12">
                     <div class="mx-auto text-center"><br/><h1><p>Your Projects</p></h1></div>
                     @if(count($posts) > 0)
                         @foreach($posts as $post)
