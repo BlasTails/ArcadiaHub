@@ -27,6 +27,7 @@ Route::get('/create', 'HomeController@create');
 
 Route::get('/','PagesController@index');
 //Route::get('/sign', 'PagesController@sign');
+Route::get('/StartupSettings', 'PagesController@StartupSettings');
 Route::get('/Membership', 'PagesController@Membership');
 //Route::get('/create', 'PagesController@create');
 //Route::get('/posts/StartupProfile', 'PagesController@StartupProfile');
