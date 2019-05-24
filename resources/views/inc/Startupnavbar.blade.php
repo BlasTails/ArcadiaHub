@@ -8,7 +8,7 @@
         <!-- Left Side Of Navbar -->
         <ul class="navbar-nav mr-auto">
             <form class="form-inline mr-auto ">
-                <input class="form-control mr-auto" style="padding-right:200px;margin-left:100px;" type="text" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-auto" style="padding-right:200px;margin-left:50px;" type="text" placeholder="  Search" aria-label="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" style="padding:9px;padding-left:15px;padding-right:15px;" type="submit"> <i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
 
@@ -16,7 +16,7 @@
 
 
         <!-- Right Side Of Navbar -->
-        <ul class="navbar-nav ml-auto" style="padding-right:27%">
+        <ul class="navbar-nav ml-auto" style="padding-right:400px">
             <!-- Authentication Links -->
             @guest
             <li class="nav-item">
