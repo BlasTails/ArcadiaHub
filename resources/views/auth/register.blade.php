@@ -7,7 +7,7 @@
 
             <div class="mx-auto text-center">
 
-                <div class="containerform" style="background-color:rgba(255, 255, 255, .9)">
+                <div class="containerform" style="background-color:rgba(255, 255, 255, .9);">
 
                     <h1>{{ __('Register') }}</h1>
                     <p>Please fill in this form to create an account.</p>

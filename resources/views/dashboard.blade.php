@@ -4,10 +4,10 @@
     <div class="card-body">
         <div class="card card-inner">
             <div class="card-body">
-                <div class="mx-auto text-center"><h1>Whats New?</h1></div>
+                <div class="mx-auto text-center"><h4>Whats New?</h4><hr/></div>
                 <div class="row">
                     <!--<div class="col-md-8"><p><img src="https://i.imgur.com/BzIYwGg.jpg" class="rounded img-fluid"/></p></div>-->
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -16,7 +16,7 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="https://i.imgur.com/3vqRmvL.jpg" alt="First slide">
+                                    <img class="a-block w-100" src="https://i.imgur.com/3vqRmvL.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100" src="https://i.imgur.com/PQKO01t.jpg" alt="Second slide">
@@ -35,25 +35,27 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4"><p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+                    
+                            <!--<div class="col-md-2"><p><img src="https://i.imgur.com/cuZumFB.jpg" class="rounded-circle img-fluid" style="width:150px;height:150px"/></p></div>-->
+                        
+                            <div class="col-md-6"><p><a href="#"><strong>Bob Businessman</strong></a></p>
+                            Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. also the leap into electronic typesetting, remaining essentially unchanged.</div>
+                    
+                    
+                            
                 </div>
+                
             </div>
         </div>
         <div class="card card-inner">
             <div class="card-body">
-                <div class="mx-auto text-center"><h1>Find the Investor for you</h1></div>
+                <div class="mx-auto text-center"><h4>Find the Investor for you</h4></div>
+                
+        
                 
                 
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                <!--
                 <div class="row">
 
                     <div class="col-md-4">
@@ -72,9 +74,12 @@
                         <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
                 </div>
+                
 
                 <br/><br/><br/>
-                <div class="mx-auto text-center"><h2>Like and see if they like you back</h2></div><br/><hr/>
+
+                -->
+                <div class="mx-auto text-center"><h6>Like and see if they like you back</h6></div><hr/>
                 <div class="row">
                     <div class="col-md-2">
                         <p><img src="https://i.imgur.com/4QQ7mrL.jpg" class="rounded-circle img-fluid"/></p>
