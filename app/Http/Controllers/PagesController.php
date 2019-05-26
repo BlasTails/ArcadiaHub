@@ -30,6 +30,24 @@ class PagesController extends Controller
         return view('pages.StartupSettings');
     }
     
+     //Startup Dash
+    public function startup()
+    {
+        return view('dashboard');
+    }
+    
+     //Investor Dash
+    public function investor()
+    {
+        return view('InvestorDash');
+    }
+    
+     //Admion Dash
+    public function admin()
+    {
+        return view('adminDash');
+    }
+    
 
     //Testing routes for investor register
     //Investor Register
