@@ -63,8 +63,12 @@ Route::group(['middleware' => ['auth']], function(){
     });
 
 });
-
 Route::resource('role', 'RoleController');
+
+Route::get('/Setup', function () {
+    return view('pages.SetupAccount');
+});
+
 
 Route::get('/dashboard', 'DashboardController@index');
 
