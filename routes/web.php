@@ -36,7 +36,22 @@ Route::resource('posts', 'PostsController');
 
 Route::get('/projects', 'PostsController@projects');
 
+
+
+//Testing routes for investor register
+//Route::get('/investorRegister', 'PagesController@investorRegister');
+//Route::view('/investorRegister', 'investorRegister');
+
+
+/*
+Route::get('/sign', function () {
+    return view('sign');
+});
+*/
+Auth::routes();
+
 Route::group(['middleware' => ['auth']], function(){
+
     Route::group(['middleware' => ['admin']], function(){
         Route::get('/admin', 'PagesController@admin')->name('admin');
     });
@@ -48,17 +63,8 @@ Route::group(['middleware' => ['auth']], function(){
     });
 
 });
-    //Testing routes for investor register
-    //Route::get('/investorRegister', 'PagesController@investorRegister');
-    //Route::view('/investorRegister', 'investorRegister');
 
-
-    /*
-Route::get('/sign', function () {
-    return view('sign');
-});
-*/
-    Auth::routes();
+Route::resource('role', 'RoleController');
 
 Route::get('/dashboard', 'DashboardController@index');
 
