@@ -38,7 +38,7 @@
                     
                             <!--<div class="col-md-2"><p><img src="https://i.imgur.com/cuZumFB.jpg" class="rounded-circle img-fluid" style="width:150px;height:150px"/></p></div>-->
                         
-                            <div class="col-md-6"><p><a href="#"><strong>Bob Businessman</strong></a></p>
+                            <div class="col-md-6"><p><a href="#"><h4>Explore your options</h4></a></p>
                             Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. also the leap into electronic typesetting, remaining essentially unchanged.</div>
                     
                     
