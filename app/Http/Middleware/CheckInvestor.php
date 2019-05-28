@@ -21,7 +21,7 @@ class CheckInvestor
         if (!$userRoles->contains('admin')){
             if (!$userRoles->contains('investor')){
                 
-                return redirect('/');
+                return redirect('/startup');
             }
         }
 

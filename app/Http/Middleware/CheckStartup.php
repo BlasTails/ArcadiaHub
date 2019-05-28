@@ -18,9 +18,9 @@ class CheckStartup
     {
         $userRoles = Auth::user()->roles->pluck('name');
         
-        if (!$userRoles->contains('startup')){
-            if (!$userRoles->contains('admin')){
-                return redirect('/');
+        if (!$userRoles->contains('admin')){
+            if (!$userRoles->contains('startup')){
+                return redirect('/investor');
             }
         }
         return $next($request);

@@ -17,12 +17,16 @@ class CheckAdmin
     public function handle($request, Closure $next)
     {
         $userRoles = Auth::user()->roles->pluck('name');
-        dd($userRoles);
+        //dd($userRoles);
         if (!$userRoles->contains('admin')){
-
-            return redirect('/');
+            if (!$userRoles->contains('investor')){
+                return redirect('/startup');
+            }else{
+                if (!$userRoles->contains('startup')){
+                    return redirect('/investor');
+                }
+            }
         }
-
         return $next($request);
     }
 }

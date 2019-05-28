@@ -17,7 +17,7 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="mx-auto text-center"><br/><h1><p> Account Datails </p></h1></div>
-                {!! Form::open(['action' => 'RoleController@store', 'method' => 'POST']) !!}
+                {!! Form::open(['action' => 'RoleController@store','PostController@store', 'method' => 'POST']) !!}
                 <div class="row" >
                     <div class="col-md-2"></div>
                     <div class="col-md-8 text-left" style="padding-top:10px; margin-bottom:22px">
