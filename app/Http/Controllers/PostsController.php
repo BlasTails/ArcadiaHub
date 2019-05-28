@@ -32,11 +32,16 @@ class PostsController extends Controller
         //$post = DB::select('SELECT * FROM posts');
         //$posts = Post::all();
         //$posts = Post::orderBy('created_at','desc')->take(1)->get();
-        $posts = Post::orderBy('created_at','desc')->get();
+        //$posts = Post::orderBy('created_at','desc')->get();
         $user_id = auth()->user()->id;
-        $user = User::find($user_id)->posts()->$posts = Post::orderBy('created_at','desc')->paginate(2);
-        
+        $user = User::find($user_id)->posts()->paginate(2);
         return view('posts.StartupProfile')->with('posts', $user);
+    }
+
+    public function projects()
+    {
+        $posts = Post::orderBy('created_at','desc')->paginate(10);
+        return view('posts.projects')->with('posts', $posts);
     }
 
     /**
@@ -63,7 +68,7 @@ class PostsController extends Controller
             'description' => 'required',
             'cover_image' => 'image|nullable|max:1999'
         ]);
-        
+
         // Handle File Upload
         if($request->hasFile('cover_image')){
             // Get filename with the extension
@@ -136,7 +141,7 @@ class PostsController extends Controller
             'body' => 'required',
             'description' => 'required',
         ]);
-        
+
         // Handle File Upload
         if($request->hasFile('cover_image')){
             // Get filename with the extension
@@ -174,17 +179,17 @@ class PostsController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
-        
+
         //Check for correct user
         if(auth()->user()->id !==$post->user_id){
             return redirect('/posts')->with('error', 'Unauthorized Page');
         }
-        
+
         if($post->cover_image != 'noimage.jpg'){
             // Delete Image
             Storage::delete('public/cover_images/'.$post->cover_image);
         }
-        
+
         $post->delete();
         return redirect('/posts')->with('success', 'Post Deleted');
 

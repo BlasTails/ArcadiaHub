@@ -34,17 +34,31 @@ Route::get('/Membership', 'PagesController@Membership');
 
 Route::resource('posts', 'PostsController');
 
-//Testing routes for investor register
-//Route::get('/investorRegister', 'PagesController@investorRegister');
-//Route::view('/investorRegister', 'investorRegister');
+Route::get('/projects', 'PostsController@projects');
+
+Route::group(['middleware' => ['auth']], function(){
+    Route::group(['middleware' => ['admin']], function(){
+        Route::get('/admin', 'PagesController@admin')->name('admin');
+    });
+    Route::group(['middleware' => ['startup']], function(){
+        Route::get('/startup', 'PagesController@startup')->name('startup');
+    });
+    Route::group(['middleware' => ['investor']], function(){
+        Route::get('/investor', 'PagesController@investor')->name('investor');
+    });
+
+});
+    //Testing routes for investor register
+    //Route::get('/investorRegister', 'PagesController@investorRegister');
+    //Route::view('/investorRegister', 'investorRegister');
 
 
-/*
+    /*
 Route::get('/sign', function () {
     return view('sign');
 });
 */
-Auth::routes();
+    Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
 
