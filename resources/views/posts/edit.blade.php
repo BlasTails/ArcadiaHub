@@ -3,7 +3,7 @@
 <div class="container">
     <div calss="row">
         <div class="col-md-12 text-center">
-            <h1>Edit Project</h1>
+            <h1>Edit Idea</h1>
         </div>
     </div><hr>
     {!! Form::open(['action' => ['PostsController@update', $post->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
@@ -11,8 +11,8 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8 text-left" style="padding-top:10px">
-            <h4>{{Form::label('title','Project Title')}}</h4>
-            {{Form::text('title', $post->title, ['class' => 'form-control', 'placeholder'=> ' Project Title'])}}
+            <h4>{{Form::label('title','Idea Title')}}</h4>
+            {{Form::text('title', $post->title, ['class' => 'form-control', 'placeholder'=> '  Title'])}}
         </div>
         <div class="col-md-2"></div>
     </div>
@@ -47,13 +47,13 @@
     
     <div class="row">
         <div class="col-sm-6 text-center" style="padding-top: 15px">
-            <a href="/test/public/posts/{{$post->id}}" class="btn btn-warning" role="button" >Cancel</a>       
+            <a href="/test/public/posts/{{$post->id}}" class="btn btn-secondary" role="button" >Cancel</a>       
         </div>
         
         
         <div class="col-sm-6 text-center" style="padding-top: 15px">
             {{Form::hidden('_method', 'PUT')}}
-            {{Form::submit('Submit',['class'=>'btn btn-success'])}}    
+            {{Form::submit('Submit',['class'=>'btn btn-primary'])}}    
         </div>
     </div><br>
     {!! Form::close() !!}

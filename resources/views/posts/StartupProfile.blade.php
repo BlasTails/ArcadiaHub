@@ -25,7 +25,7 @@
             <div class="panel panel-default" style="margin-bottom: 5px">
                 <div class="panel-heading">
                     <div id="wrapper">
-                        <a href="{{URL::asset('/posts/create')}}" class="btn btn-success" role="button" style="padding-left: 50px; padding-right: 50px"><i class="fa fa-plus-square" aria-hidden="true"></i> new projects</a>
+                        <a href="{{URL::asset('/posts/create')}}" class="btn btn-primary" role="button" style="padding-left: 50px; padding-right: 50px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a>
                     </div>
 
                 </div>
@@ -51,7 +51,7 @@
         <div class="col-md-8 col-sm-12 pull-left posttimeline">
             <div class="panel panel-default">
                 <div class="c,arol-md-12">
-                    <div class="mx-auto text-center"><br/><h1><p>Your Projects</p></h1></div>
+                    <div class="mx-auto text-center"><br/><h1><p>Your Start Ups</p></h1></div>
                     @if(count($posts) > 0)
                         @foreach($posts as $post)
                         <div class="card h-100">
@@ -71,7 +71,7 @@
                     {{$posts->links()}}  
                     @else
                         <hr>
-                        <h5 style="text-align: center; margin-bottom: 25px;">You have no Projects</h5>
+                        <h5 style="text-align: center; margin-bottom: 25px;">You have no new ideas</h5>
                         <hr>
                     @endif
                     

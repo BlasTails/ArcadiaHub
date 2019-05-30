@@ -6,7 +6,7 @@
 	        
 	        	<div class="card card-inner">
             	    <div class="card-body">
-                        <div class="mx-auto text-center"><h1>Top Start Ups and Funded</h1></div><hr/>
+                        <div class="mx-auto text-center"><h3>Top Start Ups and Funded</h3></div><hr/>
                         <div class="row">
                             
         	                <div class="col-md-4">
@@ -26,8 +26,9 @@
                             </div>
                         </div>
                         
-                        <br/><br/><br/>
-                        <div class="mx-auto text-center"><h2>New and Rising</h2></div><br/><hr/>
+                        <hr/>
+                        <div class="mx-auto text-center"><h3>New and Rising</h3></div>
+                        <div class="mx-auto text-center"><a href="{{URL::asset('/projects')}}" class="btn btn-primary" role="button" style="padding-left: 50px; padding-right: 50px"> All Ideas</a></div><hr/> 
             	        <div class="row">
                     	    <div class="col-md-2">
                     	        <p><img src="https://i.imgur.com/agjn4DG.jpg" class="rounded-circle img-fluid"/></p>

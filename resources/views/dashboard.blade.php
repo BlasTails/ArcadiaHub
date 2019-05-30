@@ -4,7 +4,7 @@
     <div class="card-body">
         <div class="card card-inner">
             <div class="card-body">
-                <div class="mx-auto text-center"><h4>Whats New?</h4><hr/></div>
+                <div class="mx-auto text-center"><h3>Whats New?</h3><hr/></div>
                 <div class="row">
                     <!--<div class="col-md-8"><p><img src="https://i.imgur.com/BzIYwGg.jpg" class="rounded img-fluid"/></p></div>-->
                     <div class="col-md-6">
@@ -38,8 +38,10 @@
                     
                             <!--<div class="col-md-2"><p><img src="https://i.imgur.com/cuZumFB.jpg" class="rounded-circle img-fluid" style="width:150px;height:150px"/></p></div>-->
                         
-                            <div class="col-md-6"><p><a href="#"><h4>Explore your options</h4></a></p>
-                            Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. <br/><br/>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. also the leap into electronic typesetting, remaining essentially unchanged.</div>
+                            <div class="col-md-6"><p><h4>Explore your options</h4></p>
+                            Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. <br/>
+                                <p><h4>Create your own idea!</h4>Start your own Idea to have investors back you!<a href="{{URL::asset('/posts/create')}}" class="btn btn-primary" role="button" style="padding-left: 50px; padding-right: 50px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a></p>
+                            </div>
                     
                     
                             
