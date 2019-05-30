@@ -8,12 +8,12 @@
         <div class="col-sm-2">
             @if(!Auth::guest())
             @if(Auth::user()->id == $post->user_id)
-            <a href="/test/public/posts/{{$post->id}}/edit" style="padding-top: 5px ;padding-bottom: 5px" class="btn btn-primary" role="button"><i class="fa fa-wrench" aria-hidden="true"></i> edit project</a>
+            <a href="/test/public/posts/{{$post->id}}/edit" class="btn btn-primary" role="button"><i class="fa fa-wrench" aria-hidden="true"></i> edit</a>
         </div>
         <!---Delete Button--->
         <div class="col-sm-2" >
 
-            <a href="Profile.html" style="padding-top: 5px ;padding-bottom: 5px" class="btn btn-danger" data-toggle="modal" data-target="#myModal"role="button"><i class="fa fa-trash" aria-hidden="true"></i> delete project</a>
+            <a href="Profile.html" class="btn btn-secondary" data-toggle="modal" data-target="#myModal"role="button"><i class="fa fa-trash" aria-hidden="true"></i> delete</a>
             <!-- The Modal -->
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
