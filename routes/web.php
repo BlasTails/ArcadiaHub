@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
-/*
+/* testting routes
 Route::get('/', 'HomeController@home');
 Route::get('/sign', 'HomeController@sign');
 Route::get('/StartupDash', 'HomeController@StartupDash');
@@ -23,33 +24,24 @@ Route::get('/StartupProfile', 'HomeController@StartupProfile');
 Route::get('/create', 'HomeController@create');
 */
 
-
-
 Route::get('/','PagesController@index');
-//Route::get('/sign', 'PagesController@sign');
 Route::get('/StartupSettings', 'PagesController@StartupSettings');
 Route::get('/Membership', 'PagesController@Membership');
-//Route::get('/create', 'PagesController@create');
-//Route::get('/posts/StartupProfile', 'PagesController@StartupProfile');
-
-Route::resource('posts', 'PostsController');
-
 Route::get('/projects', 'PostsController@projects');
-
+Route::get('/Setup', function () {
+    return view('pages.SetupAccount');
+});
+Route::get('/Setup/2', function () {
+    return view('pages.SetupAccount2');
+});
 
 
 //Testing routes for investor register
 //Route::get('/investorRegister', 'PagesController@investorRegister');
 //Route::view('/investorRegister', 'investorRegister');
 
-
-/*
-Route::get('/sign', function () {
-    return view('sign');
-});
-*/
 Auth::routes();
-
+// auth for admin, startup, investor dashboard
 Route::group(['middleware' => ['auth']], function(){
 
     Route::group(['middleware' => ['admin']], function(){
@@ -63,13 +55,12 @@ Route::group(['middleware' => ['auth']], function(){
     });
 
 });
+// Route for CRUD
 Route::resource('role', 'RoleController');
+Route::resource('posts', 'PostsController');
+Route::resource('detail', 'DetailsController');
 
-Route::get('/Setup', function () {
-    return view('pages.SetupAccount');
-});
-
-
+// Route for startup dashboard
 Route::get('/dashboard', 'DashboardController@index');
 
 //Route to Investor Dashboard

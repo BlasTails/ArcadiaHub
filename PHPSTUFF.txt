@@ -1,0 +1,14 @@
+@php 
+                    $id = Auth::user()->id;
+                    $users = DB::table('users')
+                    ->leftJoin('details', 'users.id', '=', 'details.user_id')
+                    ->where('details.user_id','=',$id)
+                    ->get();
+                    {
+                    foreach($users as $user)
+                    echo $user->address;
+                    echo $user->country;
+                    echo $user->profile_image; }
+
+                    
+                    @endphp

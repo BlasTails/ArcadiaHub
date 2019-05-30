@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Post;
 use App\User;
+use App\Detail;
+
 use DB;
 class PostsController extends Controller
 {
@@ -33,9 +35,20 @@ class PostsController extends Controller
         //$posts = Post::all();
         //$posts = Post::orderBy('created_at','desc')->take(1)->get();
         //$posts = Post::orderBy('created_at','desc')->get();
+        
         $user_id = auth()->user()->id;
         $user = User::find($user_id)->posts()->paginate(2);
-        return view('posts.StartupProfile')->with('posts', $user);
+        // $details = $user->join('details', function ($join){
+        //     $join ->on('users.id','=','details.user_id')
+        // ->where('users.id','=','details.user_id');
+        // })->get();
+        $users = DB::table('users')
+                    ->leftJoin('details', 'users.id', '=', 'details.user_id')
+                    ->where('details.user_id','=',$user_id)
+                    ->get();
+        return view('posts.StartupProfile', compact('users'))->with('posts', $user, $users);
+        //return view('posts.StartupProfile','products']);
+
     }
 
     public function projects()

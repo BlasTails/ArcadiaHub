@@ -14,10 +14,16 @@ class RoleController extends Controller
     
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'account' => 'required'
+        ]);
+
         $role = new Usertype;
         $role->role_id = $request->input('account');
         $role->user_id = auth()->user()->id;
         $role->save();
+
+        return redirect('/posts')->with('success', 'Profile Created');
     }
     
 

@@ -7,9 +7,13 @@
             <div class="panel panel-default">
                 <div class="userprofile social ">
                     <h2 class=mx-auto my-0 text->{{ Auth::user()->name }} </h2>
+                    
+                    @foreach ($users as $user)
                     <div class="userpic"> 
-                        <img src="https://i.imgur.com/AGUuIAH.jpg" alt="" class="rounded-circle img-fluid" height="215" width="215"> 
+                        <img src="storage/profile_image/{{$user->profile_image}}" alt="" class="rounded-circle img-fluid" height="215" width="215"> 
                     </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -17,9 +21,11 @@
             <div class="panel panel-default" style="margin-bottom: 5px">
                 <div class="panel-heading" >
                     <h1 class="page-header small">Personal Details</h1>
-                    <p class="page-subtitle small">Born: 16 August 1992 (age 26 years)</p>
-                    <p class="page-subtitle small">Occupation: Indie Game Developer </p>
-                    <p class="page-subtitle small">Education: Western Sydney University </p>
+                    @foreach ($users as $user)
+                    <p class="page-subtitle small">Country: {{$user->country}}</p>
+                    <p class="page-subtitle small">Location: {{$user->address}} </p>
+                    <p class="page-subtitle small">Profile Description {!!$user->user_details!!} </p>
+                    @endforeach
                 </div>
             </div>
             <div class="panel panel-default" style="margin-bottom: 5px">
