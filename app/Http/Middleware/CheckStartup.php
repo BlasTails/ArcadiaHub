@@ -17,11 +17,11 @@ class CheckStartup
     public function handle($request, Closure $next)
     {
         $userRoles = Auth::user()->roles->pluck('name');
-
-        if (!$userRoles->contains('startup')){
-
-            return redirect('/');
-
+        
+        if (!$userRoles->contains('admin')){
+            if (!$userRoles->contains('startup')){
+                return redirect('/investor');
+            }
         }
         return $next($request);
     }

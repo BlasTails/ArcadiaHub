@@ -39,7 +39,7 @@ class PagesController extends Controller
      //Investor Dash
     public function investor()
     {
-        return view('InvestorDash');
+        return view('InvestorDashboard');
     }
     
      //Admion Dash

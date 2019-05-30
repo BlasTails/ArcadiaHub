@@ -1,8 +1,14 @@
+<<<<<<< HEAD
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="{{URL::asset('/investor')}}">ArcadiaHub</a>
+=======
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="padding-left:21%;">
     <a class="navbar-brand" href="{{URL::asset('/InvestorDashboard')}}">ArcadiaHub</a>
+>>>>>>> 8aa638df542dda8f0504a397c76f8fc1730f2c0a
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="nav-link js-scroll-trigger" href="{{URL::asset('/projects')}}"> Projects </a>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <!-- Left Side Of Navbar -->

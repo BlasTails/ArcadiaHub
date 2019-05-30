@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 use App\User;
 
 
-class Role extends Model
+class Usertype extends Model
 {
     //Table Name
-   // protected $table = 'role_user';
+   protected $table = 'role_user';
     
     public function users()
     {
