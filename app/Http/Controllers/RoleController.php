@@ -23,7 +23,7 @@ class RoleController extends Controller
         $role->user_id = auth()->user()->id;
         $role->save();
 
-        return redirect('/posts')->with('success', 'Profile Created');
+        return redirect('/admin')->with('success', 'Profile Created');
     }
     
 
