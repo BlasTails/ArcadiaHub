@@ -7,9 +7,12 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <!-- Left Side Of Navbar -->
         <ul class="navbar-nav mr-auto">
-            <form class="form-inline mr-auto ">
-                <input class="form-control mr-auto" style="padding-right:200px;margin-left:50px;" type="text" placeholder="  Search" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" style="padding:9px;padding-left:15px;padding-right:15px;" type="submit"> <i class="fa fa-search" aria-hidden="true"></i></button>
+            <form action="{{URL::to('/search')}}" method="POST" role="search" class="form-inline mr-auto ">
+                {{ csrf_field() }}
+                <div class="input-group">
+                    <input name="q" class="form-control mr-auto" style="padding-right:200px;margin-left:50px;" type="text" placeholder="  Search" aria-label="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" style="padding:9px;padding-left:15px;padding-right:15px;" type="submit"> <i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
             </form>
 
         </ul>
