@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Detail;
 
 class PagesController extends Controller
 {
@@ -33,7 +34,10 @@ class PagesController extends Controller
      //Startup Dash
     public function startup()
     {
-        return view('dashboard');
+        //$details = Detail::orderBy('address','country','user_details','profile_image')->paginate(10);
+        $details = Detail::all();
+        //$users = Users::orderBy('name')->paginate(10);
+        return view('dashboard')->with('details', $details);
     }
     
      //Investor Dash
