@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="padding-left:21%;">
-    <a class="navbar-brand" href="{{URL::asset('/dashboard')}}">ArcadiaHub</a>
+    <a class="navbar-brand" href="{{URL::asset('/startup')}}">ArcadiaHub</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,9 +11,7 @@
                 <input class="form-control mr-auto" style="padding-right:200px;margin-left:50px;" type="text" placeholder="  Search" aria-label="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" style="padding:9px;padding-left:15px;padding-right:15px;" type="submit"> <i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
-
         </ul>
-
 
         <!-- Right Side Of Navbar -->
         <ul class="navbar-nav ml-auto" style="padding-right:400px">
@@ -44,7 +42,6 @@
                     <a class="dropdown-item" href="{{ route('logout') }}"
                        onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out" aria-hidden="true"></i>
-
                         {{ __('Logout') }}
                     </a>
 

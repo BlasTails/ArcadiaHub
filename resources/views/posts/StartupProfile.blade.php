@@ -64,7 +64,7 @@
                             <img class="card-img-top" src="storage/cover_images/{{$post->cover_image}}" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="/test/public/posts/{{$post->id}}">{{$post->title}}</a>
+                                    <a href="/posts/{{$post->id}}">{{$post->title}}</a>
                                 </h4>
                                 <p class="card-text">{{$post->description}}</p>
                                 <small>Written on {{$post->created_at}}</small>
