@@ -33,7 +33,6 @@
                     @foreach ($users as $user)
                     <p class="page-subtitle small">Country: {{$user->country}}</p>
                     <p class="page-subtitle small">Location: {{$user->address}} </p>
-                    
                     @endforeach
                 </div>
             </div>

@@ -69,7 +69,5 @@ Route::get('/InvestorDashboard', function () {
 });
 
 //Route to Investor Profile
-Route::get('/InvestorProfile', function () {
-    return view('investorPosts.InvestorProfile');
-});
+Route::get('/InvestorProfile', 'PagesController@InvestorProfile');
 
