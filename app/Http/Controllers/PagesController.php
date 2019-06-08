@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
+use App\Detail;
+=======
 use App\Post;
 use App\User;
-use App\Detail;
 use DB;
+>>>>>>> b67cc8c3ad2997e34564a09f4956a9bea20075ae
 
 class PagesController extends Controller
 {
@@ -43,7 +46,10 @@ class PagesController extends Controller
      //Startup Dash
     public function startup()
     {
-        return view('dashboard');
+        //$details = Detail::orderBy('address','country','user_details','profile_image')->paginate(10);
+        $details = Detail::all();
+        //$users = Users::orderBy('name')->paginate(10);
+        return view('dashboard')->with('details', $details);
     }
     
      //Investor Dash
