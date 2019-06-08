@@ -4,41 +4,41 @@
     <div class="row">
         <div class="col-md-12 text-center ">
             <div class="panel panel-default">
-                <div class="investorprofile social ">
-                    <h2 class=mx-auto my-0 text->Richie Rich</h2>
+                <div class="investorprofile social">
+                    <h2 class=mx-auto my-0 text->{{ Auth::user()->name }} </h2>
+                    @foreach ($users as $user)
                     <div class="userpic"> 
-                        <!--<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="userpicimg">-->
-                        <img src="https://i.imgur.com/yMIWrcJ.jpg" alt="" class="rounded-circle img-fluid" height="215" width="215" >
+                        <img src="storage/profile_image/{{$user->profile_image}}" alt="Cinque Terre" class="rounded-circle" width="200" height="200"> 
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-sm-12 pull-right">
-            <div class="panel panel-default" style="margin-bottom: 5px">
+        <div class="panel panel-default" style="margin-bottom: 5px">
                 <div class="panel-heading" >
-                    <h1 class="page-header small">Personal Details:</h1>
-                    <!--<p class="page-subtitle small">Limited information is visible</p><br>-->
-                    <p class="page-subtitle small">Born: 30 May 1990 (age 28 years)</p>
-                    <p class="page-subtitle small">Occupation: Chairman and CEO of Platinum Productions </p>
-                    <p class="page-subtitle small">Net Worth: 56 billion USD (2019)</p>
+                    <h1 class="page-header small">Personal Details</h1>
+                    @foreach ($users as $user)
+                    <p class="page-subtitle small">Country: {{$user->country}}</p>
+                    <p class="page-subtitle small">Location: {{$user->address}} </p>
+                    @endforeach
                 </div>
             </div>
-
+            <div class="panel panel-default" style="margin-bottom: 5px">
+                <div class="panel-heading" >
+                    <h1 class="page-header small">Profile Description </h1>
+                    @foreach ($users as $user)
+                    <p class="page-subtitle small">{!!$user->user_details!!} </p>
+                    @endforeach
+                </div>
+            </div>
             <div class="panel panel-default">
                 <div class="panel-heading" >
-                    <h1 class="page-header small">Career Biography</h1>
-                    <p class="page-subtitle small">Highlights:</p>
-                    <div class="col-md-12">
-                        <ul class="list-group">
-                            <li class="list-group-item"><span class="fa fa-building"></span> Has invested in over 60 companies</li>
-                            <li class="list-group-item"><span class="fa fa-dollar"></span> Completely self built</li>
-                            <li class="list-group-item"><span class="fa fa-bank"></span> First bought stock at 13</li>
-                            <li class="list-group-item"><span class="fa fa-heart"></span> Gives aways 25% of his yearly earnings to charity</li>
-                            <li class="list-group-item"><span class="far fa-handshake"></span> Involved in over 40 international partnershipd"</li>
-                        </ul>
-                    </div>
+                    <h1 class="page-header small">Contact</h1>
+                    @foreach ($users as $user)
+                    <p class="page-subtitle small">Email: {{$user->email}}</p>
+                    @endforeach
                 </div>
-                <hr>
             </div>
         </div>
         <div class="col-md-8 col-sm-12 pull-left posttimeline">

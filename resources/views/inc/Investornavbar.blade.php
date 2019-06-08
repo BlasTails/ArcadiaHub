@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="{{URL::asset('/investor')}}">ArcadiaHub</a>
-=======
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="padding-left:21%;">
-    <a class="navbar-brand" href="{{URL::asset('/InvestorDashboard')}}">ArcadiaHub</a>
->>>>>>> 8aa638df542dda8f0504a397c76f8fc1730f2c0a
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="nav-link js-scroll-trigger" href="{{URL::asset('/projects')}}"> Projects </a>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <!-- Left Side Of Navbar -->
@@ -17,9 +11,7 @@
                 <input class="form-control mr-auto" style="padding-right:200px;margin-left:100px;" type="text" placeholder="Search" aria-label="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" style="padding:9px;padding-left:15px;padding-right:15px;" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
-
         </ul>
-
 
         <!-- Right Side Of Navbar -->
         <ul class="navbar-nav ml-auto" style="padding-right:400px">
@@ -39,7 +31,7 @@
 
             <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ Auth::user()->name }} <span class="caret"></span>
+                {{ Auth::user()->name }} <span class="caret"></span>
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -65,7 +57,7 @@
 
             <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{--{{ Auth::user()->name }}--}}Investor <span class="caret"></span>
+                {{ Auth::user()->name }}<span class="caret"></span>
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

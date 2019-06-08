@@ -3,7 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use App\Detail;
+=======
+use App\Post;
+use App\User;
+use DB;
+>>>>>>> b67cc8c3ad2997e34564a09f4956a9bea20075ae
 
 class PagesController extends Controller
 {
@@ -46,12 +52,23 @@ class PagesController extends Controller
         return view('InvestorDashboard');
     }
     
-     //Admion Dash
+     //Admin Dash
     public function admin()
     {
         return view('adminDash');
     }
-    
+
+     //Investor Profile 
+     public function InvestorProfile()
+     {
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id)->posts()->paginate(2);
+        $users = DB::table('users')
+                    ->leftJoin('details', 'users.id', '=', 'details.user_id')
+                    ->where('details.user_id','=',$user_id)
+                    ->get();
+        return view('investorPosts.InvestorProfile', compact('users'))->with('posts', $user, $users);
+     }
 
     //Testing routes for investor register
     //Investor Register

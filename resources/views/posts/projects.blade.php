@@ -14,7 +14,7 @@
                              src="storage/cover_images/{{$post->cover_image}}">
                     </div>
                     <div class="col-md-8 col-sm-8">
-                        <h3><a href="/test/public/posts/{{$post->id}}">{{$post->title}}</a></h3>
+                        <h3><a href="posts/{{$post->id}}">{{$post->title}}</a></h3>
                         <p class="card-text">{{$post->description}}</p>
                         <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
                     </div>

@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Storage;
 use App\Post;
 use App\User;
 use App\Detail;
-
 use DB;
+
 class PostsController extends Controller
 {
     /**
