@@ -16,6 +16,12 @@ class PagesController extends Controller
         return view('pages.index');
     }
     
+    //About
+    public function About()
+    {
+        return view('pages.About');
+    }
+    
     //sign in
     public function sign()
     {

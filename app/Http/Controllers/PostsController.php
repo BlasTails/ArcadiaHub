@@ -53,7 +53,7 @@ class PostsController extends Controller
 
     public function projects()
     {
-        $posts = Post::orderBy('created_at','desc')->paginate(10);
+        $posts = Post::orderBy('created_at','desc')->paginate(5);
         return view('posts.projects')->with('posts', $posts);
     }
 

@@ -5,7 +5,7 @@
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-">ArcadiaHub</h1> <br/><br/><br/><br/>
                     <h2 class="text-black-50 mx-auto mt-2 mb-5">Seek, Reach, Connect</h2>
-                    <a href="homepage.html"><button type="submit" class="registerbtn">About</button></a>
+                    <a href="/About"><button type="submit" class="registerbtn">About</button></a>
                     <br/><br/><br/><br/><br/><br/><br/>
                 </div>
             </div>

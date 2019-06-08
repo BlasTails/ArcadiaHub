@@ -27,6 +27,7 @@ Route::get('/create', 'HomeController@create');
 Route::get('/','PagesController@index');
 Route::get('/StartupSettings', 'PagesController@StartupSettings');
 Route::get('/Membership', 'PagesController@Membership');
+Route::get('/About', 'PagesController@About');
 Route::get('/projects', 'PostsController@projects');
 Route::get('/Setup', function () {
     return view('pages.SetupAccount');
