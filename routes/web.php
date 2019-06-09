@@ -1,5 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Input;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +26,8 @@ Route::get('/StartupProfile', 'HomeController@StartupProfile');
 Route::get('/create', 'HomeController@create');
 */
 
+Route::get('/StartupSettings', 'PagesController@settings');
+Route::get('/search', 'PagesController@search')->name('search');
 Route::get('/','PagesController@index');
 Route::get('/StartupSettings', 'PagesController@StartupSettings');
 Route::get('/Membership', 'PagesController@Membership');

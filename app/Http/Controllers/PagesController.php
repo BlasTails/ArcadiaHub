@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Detail;
 use App\Post;
 use App\User;
+use App\Usertype;
 use DB;
 
 class PagesController extends Controller
@@ -28,13 +29,24 @@ class PagesController extends Controller
         return view('pages.sign');
     }
     
+    //Search
+    public function search(Request $request)
+    {
+        $request->validate([
+            'query' => 'required|min:3'
+        ]);
+        $query = $request->input('query');
+        $posts = Post::where('title','like', "%$query%")->get();
+        return view('pages.search-results')->with('posts', $posts);
+    }
+    
     //Startup Dash
     public function Membership()
     {
         return view('pages.Membership');
     }
     
-    //Startup Dash
+    //Startup Settings
     public function StartupSettings()
     {
         return view('pages.StartupSettings');
@@ -52,7 +64,13 @@ class PagesController extends Controller
      //Investor Dash
     public function investor()
     {
-        return view('InvestorDashboard');
+        //$users = User::all();
+        $users = DB::table('users')
+                    ->leftJoin('details', 'users.id', '=', 'details.user_id')
+                    ->leftJoin('role_user', 'users.id', '=', 'role_user.user_id')
+                    ->get();
+        return view('InvestorDashboard')->with('users', $users);
+        //return view('InvestorDashboard');
     }
     
      //Admin Dash
