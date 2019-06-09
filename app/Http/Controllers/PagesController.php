@@ -61,6 +61,12 @@ class PagesController extends Controller
         return view('InvestorDashboard')->with('users', $users);
         //return view('InvestorDashboard');
     }
+    //Show profile
+    public function show($id)
+    {
+        $post = Post::find($id);
+        return view('posts.show')->with('post', $post);
+    }
     
      //Admin Dash
     public function admin()
