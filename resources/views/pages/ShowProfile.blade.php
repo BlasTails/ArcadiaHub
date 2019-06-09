@@ -42,6 +42,20 @@
             <div class="panel panel-default">
                 <div class="c,arol-md-12">
                     <div class="mx-auto text-center"><br/><h1><p>Their Start Ups</p></h1></div>
+                    
+                        @foreach($details as $detail)
+                        <div class="card h-100">
+                            <img class="card-img-top" src="storage/cover_images/{{$detail->cover_image}}" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="/posts/{{$detail->id}}">{{$detail->title}}</a>
+                                </h4>
+                                <p class="card-text">{{$detail->description}}</p>
+                                <small>Written on {{$detail->created_at}}</small>
+                            </div>
+                        </div>
+                        <br>
+                        @endforeach
                       
                 </div>
             </div>

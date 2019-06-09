@@ -88,6 +88,8 @@ class DetailsController extends Controller
         $detail = Detail::find($id)
             ->leftJoin('users', 'details.user_id', '=', 'users.id')
             ->where('users.id','=',$id)
+            ->leftJoin('posts', 'details.user_id', '=', 'posts.user_id')
+            ->where('posts.user_id','=',$id)
             ->get();
             
 
