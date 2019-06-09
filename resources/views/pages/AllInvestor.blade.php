@@ -1,12 +1,12 @@
-@extends('layouts.Investorapp')
+@extends('layouts.Startupapp')
 @section('content')
 <div class="container">
     <div class="row" style="padding-bottom:15px">
-        <h1>Start Ups</h1>
+        <h1>Investors</h1>
 	    <div class="card-body">
                 @if(count($users) > 0)
                 @foreach($users as $user)
-				@if($user->role_id == 1)
+				@if($user->role_id == 2)
 				<div class="card">
                 	<div class="row">
                     	<div class="col-md-2 col-sm-2">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <br>
-				@endif 
+				@endif
                 @endforeach
                 @else
                 <div class="col-xl-12 ">
