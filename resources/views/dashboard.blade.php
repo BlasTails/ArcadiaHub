@@ -3,12 +3,12 @@
 <div class="background_image">
 <div class="container">
     <div class="card-body">
-        <div class="card card-inner">
+        <!--<div class="card card-inner">
             <div class="card-body">
                 <div class="mx-auto text-center"><h3>Whats New?</h3><hr/></div>
-                <div class="row">
+                <div class="row">-->
                     <!--<div class="col-md-8"><p><img src="https://i.imgur.com/BzIYwGg.jpg" class="rounded img-fluid"/></p></div>-->
-                    <div class="col-md-6">
+                    <!--<div class="col-md-6">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -35,11 +35,11 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                    </div>
+                    </div>-->
                     
                             <!--<div class="col-md-2"><p><img src="https://i.imgur.com/cuZumFB.jpg" class="rounded-circle img-fluid" style="width:150px;height:150px"/></p></div>-->
                         
-                            <div class="col-md-6"><p><h4>Explore your options</h4></p>
+                            <!--<div class="col-md-6"><p><h4>Explore your options</h4></p>
                             Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. <br/>
                                 <p><h4>Create your own idea!</h4>Start your own Idea to have investors back you!<a href="{{URL::asset('/posts/create')}}" class="btn btn-primary" role="button" style="padding-left: 50px; padding-right: 50px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a></p>
                             </div>
@@ -49,12 +49,40 @@
                 </div>
                 
             </div>
-        </div>
+        </div>-->
         <div class="card card-inner">
             <div class="card-body">
-                <div class="mx-auto text-center"><h4>Find the Investor for you</h4></div>
+
+                <div class="mx-auto text-center"><h4>Create your own idea!</h4></div>
+                <div class="mx-auto text-center"><h6>Start your own Idea to have investors back you!</h6></div><hr/>
+                <div class="card card-inner">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p></p>
+                                <!--<p><img src="storage/cover_images/flow-chart-presentation.jpg" class="rounded-circle img-fluid"/></p>-->
+                                <!--<p><img src="storage/cover_images/flow-chart-presentation.jpg" class="rounded" width=200% height=300%/></p>-->
+                                <p><img src="https://cdn.stocksnap.io/img-thumbs/960w/SWRREC0K3A.jpg" class="rounded" width=200% height=300%/></p>
+                                <!--<p class="text-secondary text-center">15 Minutes Ago</p>-->
+                            </div>
+                            <div class="col-md-10">
+                                <!--<p style="padding-left:15%"><a href="Investor_Profile.html"><strong>Rachad Risk</strong></a><br><small>Location: {{--{{$detail->address}}--}}, {{--{{$detail->country}}--}}</small></p>-->
+                                <p style="padding:2% 0% 0% 15%">Click here to view projects that other startups are developing</p>
+                                <!--<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+                                <p>{{--{{$detail->user_details}}--}}</p>
+                                <p>
+                                    <!--<a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display Projects</a>-->
+                                    <!--<a href="{{--{{URL::asset('/posts/create')}}--}}" class="float-right btn btn-primary" role="button" style="padding-left: 50px; padding-right: 50px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a>-->
+                                    <a href="{{URL::asset('/posts/create')}}" class="float-right btn btn-primary" role="button" style="padding-left: 65px; padding-right: 65px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr/><div class="mx-auto text-center"><h4>Find the Investor for you</h4></div>
                 
-        
+                
                 
                 
                 
@@ -90,7 +118,8 @@
                             <div class="col-md-2">
                                 <p></p>
                                 <!--<p><img src="storage/cover_images/pexels-photo-937481.jpeg" class="rounded-circle img-fluid"/></p>-->
-                                <p><img src="storage/cover_images/pexels-photo-937481.jpeg" class="rounded" width=200% height=300%/></p>
+                                <!--<p><img src="storage/cover_images/pexels-photo-937481.jpeg" class="rounded" width=200% height=300%/></p>-->
+                                <p><img src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260" class="rounded" width=200% height=300%/></p>
                                 <!--<p class="text-secondary text-center">15 Minutes Ago</p>-->
                             </div>
                             <div class="col-md-10">
@@ -114,7 +143,8 @@
                             <div class="col-md-2">
                                 <p></p>
                                 <!--<p><img src="storage/cover_images/pexels-photo-450271.jpeg" class="rounded-circle img-fluid"/></p>-->
-                                <p><img src="storage/cover_images/pexels-photo-450271.jpeg" class="rounded" width=200% height=300%/></p>
+                                <!--<p><img src="storage/cover_images/pexels-photo-450271.jpeg" class="rounded" width=200% height=300%/></p>-->
+                                <p><img src="https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="rounded" width=200% height=300%/></p>
                                 <!--<p class="text-secondary text-center">15 Minutes Ago</p>-->
                             </div>
                             <div class="col-md-10">
@@ -138,7 +168,8 @@
                             <div class="col-md-2">
                                 <p></p>
                                 <!--<p><img src="storage/cover_images/flow-chart-presentation.jpg" class="rounded-circle img-fluid"/></p>-->
-                                <p><img src="storage/cover_images/flow-chart-presentation.jpg" class="rounded" width=200% height=300%/></p>
+                                <!--<p><img src="storage/cover_images/flow-chart-presentation.jpg" class="rounded" width=200% height=300%/></p>-->
+                                <p><img src="https://images.pexels.com/photos/1661004/pexels-photo-1661004.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260" class="rounded" width=200% height=300%/></p>
                                 <!--<p class="text-secondary text-center">15 Minutes Ago</p>-->
                             </div>
                             <div class="col-md-10">
