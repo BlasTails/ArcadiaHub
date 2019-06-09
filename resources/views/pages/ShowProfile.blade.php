@@ -55,7 +55,8 @@
                             </div>
                         </div>
                         <br>
-                        @endforeach  
+                        @endforeach 
+                        
                     @else
                         <hr>
                         <h5 style="text-align: center; margin-bottom: 25px;">They have no Start Ups</h5>

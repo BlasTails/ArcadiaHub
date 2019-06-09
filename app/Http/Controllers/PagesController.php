@@ -71,6 +71,18 @@ class PagesController extends Controller
         return view('InvestorDashboard')->with('users', $users);
         //return view('InvestorDashboard');
     }
+
+    public function AllStartup()
+    {
+        //$users = User::all();
+        $users = DB::table('users')
+                    ->leftJoin('details', 'users.id', '=', 'details.user_id')
+                    ->leftJoin('role_user', 'users.id', '=', 'role_user.user_id')
+                    ->get();
+        return view('pages.AllStartup')->with('users', $users);
+        //return view('InvestorDashboard');
+    }
+
     
     
      //Admin Dash

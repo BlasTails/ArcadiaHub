@@ -84,7 +84,6 @@ class DetailsController extends Controller
     public function show($id)
     {
         //Show profile
-        
         $detail = Detail::find($id)
             ->leftJoin('users', 'details.user_id', '=', 'users.id')
             ->where('users.id','=',$id)
