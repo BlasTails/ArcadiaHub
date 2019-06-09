@@ -632,3 +632,11 @@ a {
     transition: 0.5s;
     }
 
+.background_image{
+    background: url(https://images.pexels.com/photos/1742370/pexels-photo-1742370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+	margin: 0;
+}
+
