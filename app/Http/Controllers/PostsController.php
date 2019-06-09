@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Storage;
 use App\Post;
 use App\User;
 use App\Detail;
-
 use DB;
+
 class PostsController extends Controller
 {
     /**
@@ -53,7 +53,7 @@ class PostsController extends Controller
 
     public function projects()
     {
-        $posts = Post::orderBy('created_at','desc')->paginate(10);
+        $posts = Post::orderBy('created_at','desc')->paginate(5);
         return view('posts.projects')->with('posts', $posts);
     }
 

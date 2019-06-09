@@ -33,6 +33,7 @@ Route::post('/search', function () {
 Route::get('/','PagesController@index');
 Route::get('/StartupSettings', 'PagesController@StartupSettings');
 Route::get('/Membership', 'PagesController@Membership');
+Route::get('/About', 'PagesController@About');
 Route::get('/projects', 'PostsController@projects');
 Route::get('/Setup', function () {
     return view('pages.SetupAccount');
@@ -75,7 +76,5 @@ Route::get('/InvestorDashboard', function () {
 });
 
 //Route to Investor Profile
-Route::get('/InvestorProfile', function () {
-    return view('investorPosts.InvestorProfile');
-});
+Route::get('/InvestorProfile', 'PagesController@InvestorProfile');
 

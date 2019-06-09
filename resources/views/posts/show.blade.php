@@ -8,7 +8,7 @@
         <div class="col-sm-2">
             @if(!Auth::guest())
             @if(Auth::user()->id == $post->user_id)
-            <a href="/test/public/posts/{{$post->id}}/edit" class="btn btn-primary" role="button"><i class="fa fa-wrench" aria-hidden="true"></i> edit</a>
+            <a href="/posts/{{$post->id}}/edit" class="btn btn-primary" role="button"><i class="fa fa-wrench" aria-hidden="true"></i> edit</a>
         </div>
         <!---Delete Button--->
         <div class="col-sm-2" >

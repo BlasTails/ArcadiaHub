@@ -1,10 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.Admin')
 @section('content')
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <h1>this is admin dash</h1>
 
 
