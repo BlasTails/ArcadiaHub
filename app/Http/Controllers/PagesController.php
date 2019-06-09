@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Detail;
 use App\Post;
 use App\User;
+use App\Usertype;
 use DB;
-
 
 class PagesController extends Controller
 {
@@ -60,7 +59,13 @@ class PagesController extends Controller
      //Investor Dash
     public function investor()
     {
-        return view('InvestorDashboard');
+        //$users = User::all();
+        $users = DB::table('users')
+                    ->leftJoin('details', 'users.id', '=', 'details.user_id')
+                    ->leftJoin('role_user', 'users.id', '=', 'role_user.user_id')
+                    ->get();
+        return view('InvestorDashboard')->with('users', $users);
+        //return view('InvestorDashboard');
     }
     
      //Admin Dash
