@@ -26,10 +26,8 @@ Route::get('/StartupProfile', 'HomeController@StartupProfile');
 Route::get('/create', 'HomeController@create');
 */
 
-Route::post('/search', function () {
-   $q = Input::get('q') ;
-    dd($q);
-});
+Route::get('/StartupSettings', 'PagesController@settings');
+Route::get('/search', 'PagesController@search')->name('search');
 Route::get('/','PagesController@index');
 Route::get('/StartupSettings', 'PagesController@StartupSettings');
 Route::get('/Membership', 'PagesController@Membership');

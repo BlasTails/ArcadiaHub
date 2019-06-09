@@ -3,7 +3,6 @@
 
 <div class="container">
     
-    {!! Form::open(['action' => ['DetailsController@update', $detail->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     
     <div class="row">
         <div class="col-md-12 text-center ">
@@ -34,7 +33,7 @@
                         <div class="col-md-2"></div>
                         <div class="col-md-8 text-left">
                             <h4>{{Form::label('address','Address')}}</h4>
-                            {{Form::text('address', $detail->address, ['class' => 'form-control', 'placeholder'=> ' Address'])}}
+                            {{Form::text('address', '', ['class' => 'form-control', 'placeholder'=> ' Address'])}}
                         </div>
                         <div class="col-md-2"></div>
                     </div>
@@ -44,7 +43,7 @@
                         <div class="col-md-2"></div>
                         <div class="col-md-8 text-left" style="padding-top:10px">
                             <h4>{{Form::label('country','Country')}}</h4>
-                            {{Form::text('country', $detail->country, ['class' => 'form-control', 'placeholder'=> ' Country'])}}
+                            {{Form::text('country', '', ['class' => 'form-control', 'placeholder'=> ' Country'])}}
                         </div>
                         <div class="col-md-2"></div>
                     </div>
@@ -53,7 +52,7 @@
                         <div class="col-md-2"></div>
                         <div class="col-md-8 text-left" style="padding-top:10px">
                             <h4>{{Form::label('user_details','User Details')}}</h4>
-                            {{Form::textarea('user_detail', $detail->user_details, ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder'=> ' Description Body'])}}
+                            {{Form::textarea('user_details', '', ['id' => 'article-ckeditor', 'class' => 'form-control', 'placeholder'=> ' Description Body'])}}
                         </div>
                         <div class="col-md-2"></div>
                     </div>

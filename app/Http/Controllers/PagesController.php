@@ -30,13 +30,19 @@ class PagesController extends Controller
         return view('pages.sign');
     }
     
+    //Search
+    public function search(Request $request)
+    {
+        return view('pages.search-results');
+    }
+    
     //Startup Dash
     public function Membership()
     {
         return view('pages.Membership');
     }
     
-    //Startup Dash
+    //Startup Settings
     public function StartupSettings()
     {
         return view('pages.StartupSettings');
