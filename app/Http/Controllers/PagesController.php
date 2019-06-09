@@ -29,24 +29,13 @@ class PagesController extends Controller
         return view('pages.sign');
     }
     
-    //Search
-    public function search(Request $request)
-    {
-        $request->validate([
-            'query' => 'required|min:3'
-        ]);
-        $query = $request->input('query');
-        $posts = Post::where('title','like', "%$query%")->get();
-        return view('pages.search-results')->with('posts', $posts);
-    }
-    
     //Startup Dash
     public function Membership()
     {
         return view('pages.Membership');
     }
     
-    //Startup Settings
+    //Startup Dash
     public function StartupSettings()
     {
         return view('pages.StartupSettings');
@@ -72,12 +61,7 @@ class PagesController extends Controller
         return view('InvestorDashboard')->with('users', $users);
         //return view('InvestorDashboard');
     }
-    //Show profile
-    public function show($id)
-    {
-        $post = Post::find($id);
-        return view('posts.show')->with('post', $post);
-    }
+    
     
      //Admin Dash
     public function admin()

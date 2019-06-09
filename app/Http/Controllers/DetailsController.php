@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Detail;
 use App\User;
 use App\Post;
+use DB;
 
 class DetailsController extends Controller
 {
@@ -82,8 +83,18 @@ class DetailsController extends Controller
      */
     public function show($id)
     {
-        //
-        $detail = Detail::find($id);
+        //Show profile
+        
+        $detail = Detail::find($id)
+            ->leftJoin('users', 'details.user_id', '=', 'users.id')
+            ->where('users.id','=',$id)
+            ->get();
+            
+
+        return view('pages.ShowProfile')->with('details', $detail);
+        
+         
+    
     }
 
     /**

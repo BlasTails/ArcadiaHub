@@ -42,7 +42,7 @@
 						<img src="storage/profile_image/{{$user->profile_image}}" class="rounded-circle img-fluid" width="1000" height="200"/>
                     	</div>
                     <div class="col-md-4 col-sm-4">
-                        <h3><a href="user/{{$user->id}}">{{$user->name}}</a></h3>
+                        <h3><a href="detail/{{$user->user_id}}">{{$user->name}}</a></h3>
                         <p class="card-text">{{$user->country}}</p>
 
                     </div>
@@ -50,7 +50,6 @@
                 <br>
 				@endif 
                 @endforeach
-                {{--{{$user->links()}}--}}
 				
                 @else
                 <div class="col-xl-12 ">
