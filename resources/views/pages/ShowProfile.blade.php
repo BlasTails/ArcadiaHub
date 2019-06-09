@@ -42,21 +42,25 @@
             <div class="panel panel-default">
                 <div class="c,arol-md-12">
                     <div class="mx-auto text-center"><br/><h1><p>Their Start Ups</p></h1></div>
-                    
-                        @foreach($details as $detail)
+                    @if(count($post) > 0)
+                        @foreach($post as $post)
                         <div class="card h-100">
-                            <img class="card-img-top" src="storage/cover_images/{{$detail->cover_image}}" alt="">
+                            <img class="card-img-top" src="storage/cover_images/{{$post->cover_image}}" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="/posts/{{$detail->id}}">{{$detail->title}}</a>
+                                    <a href="/posts/{{$post->id}}">{{$post->title}}</a>
                                 </h4>
-                                <p class="card-text">{{$detail->description}}</p>
-                                <small>Written on {{$detail->created_at}}</small>
+                                <p class="card-text">{{$post->description}}</p>
+                                <small>Written on {{$post->created_at}}</small>
                             </div>
                         </div>
                         <br>
-                        @endforeach
-                      
+                        @endforeach  
+                    @else
+                        <hr>
+                        <h5 style="text-align: center; margin-bottom: 25px;">They have no ideas</h5>
+                        <hr>
+                    @endif 
                 </div>
             </div>
         </div>      

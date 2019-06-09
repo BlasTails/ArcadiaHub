@@ -88,12 +88,13 @@ class DetailsController extends Controller
         $detail = Detail::find($id)
             ->leftJoin('users', 'details.user_id', '=', 'users.id')
             ->where('users.id','=',$id)
-            ->leftJoin('posts', 'details.user_id', '=', 'posts.user_id')
+            ->get();
+        $post = DB::table('users')
+            ->leftJoin('posts', 'users.id', '=', 'posts.user_id')
             ->where('posts.user_id','=',$id)
             ->get();
-            
 
-        return view('pages.ShowProfile')->with('details', $detail);
+        return view('pages.ShowProfile', compact('post'))->with('details', $detail, $post);
         
          
     
