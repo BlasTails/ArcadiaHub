@@ -1,19 +1,16 @@
 @extends('layouts.Startupapp')
 @section('content')
-
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center ">
             <div class="panel panel-default">
                 <div class="userprofile social ">
                     <h2 class=mx-auto my-0 text->{{ Auth::user()->name }} </h2>
-                    
                     @foreach ($users as $user)
                     <div class="userpic"> 
                         <img src="storage/profile_image/{{$user->profile_image}}" alt="Cinque Terre" class="rounded-circle" width="200" height="200"> 
                     </div>
                     @endforeach
-
                 </div>
             </div>
         </div>
@@ -68,20 +65,15 @@
                                 <p class="card-text">{{$post->description}}</p>
                                 <small>Written on {{$post->created_at}}</small>
                             </div>
-                            
                         </div>
                         <br>
-                        
                         @endforeach
                     {{$posts->links()}}  
                     @else
                         <hr>
                         <h5 style="text-align: center; margin-bottom: 25px;">You have no new ideas</h5>
                         <hr>
-                    @endif
-                    
-                          
-                       
+                    @endif   
                 </div>
             </div>
         </div>      
