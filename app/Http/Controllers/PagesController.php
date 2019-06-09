@@ -28,6 +28,16 @@ class PagesController extends Controller
     {
         return view('pages.sign');
     }
+
+    //Search
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+        
+        $posts = Post::where('title','like', "%$query%")->get();
+        
+        return view('pages.search-results')->with('posts', $posts);
+    }
     
     //Startup Dash
     public function Membership()

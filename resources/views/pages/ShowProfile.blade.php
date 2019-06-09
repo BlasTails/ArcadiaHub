@@ -58,7 +58,7 @@
                         @endforeach  
                     @else
                         <hr>
-                        <h5 style="text-align: center; margin-bottom: 25px;">They have no ideas</h5>
+                        <h5 style="text-align: center; margin-bottom: 25px;">They have no Start Ups</h5>
                         <hr>
                     @endif 
                 </div>
