@@ -38,8 +38,8 @@
 				@if($user->role_id == 1)
 				<div class="card"><br>
                 	<div class="row">
-                    	<div class="col-md-4 col-sm-4">
-						<img src="storage/profile_image/{{$user->profile_image}}" class="rounded-circle img-fluid" width="200" height="200"/>
+                    	<div class="col-md-2 col-sm-2">
+						<img src="storage/profile_image/{{$user->profile_image}}" class="rounded-circle img-fluid" width="1000" height="200"/>
                     	</div>
                     <div class="col-md-4 col-sm-4">
                         <h3><a href="user/{{$user->id}}">{{$user->name}}</a></h3>
@@ -48,10 +48,6 @@
                     </div>
                 </div>
                 <br>
-        
-
-
-
 				@endif 
                 @endforeach
                 {{--{{$user->links()}}--}}
