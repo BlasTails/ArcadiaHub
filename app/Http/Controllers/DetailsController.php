@@ -95,6 +95,7 @@ class DetailsController extends Controller
     public function edit($id)
     {
         //
+        
     }
 
     /**
@@ -106,7 +107,41 @@ class DetailsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'profile_image' => 'image|nullable|max:1999',
+            'address' => 'required',
+            'country' => 'required',
+            'user_details' => 'required'
+        ]);
+
+        // Handle File Upload
+        if ($request->hasFile('profile_image')) {
+            // Get filename with the extension
+            $filenameWithExt = $request->file('profile_image')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just ext
+            $extension = $request->file('profile_image')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $path = $request->file('profile_image')->storeAs('public/profile_image', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noimage.jpg';
+        }
+
+
+        //Update Detail
+        $detail = Detail::find($id);
+        $detail->address = $request->input('address');
+        $detail->country = $request->input('country');
+        $detail->user_details = $request->input('user_details');
+        if($request->hasFile('profile_image')){
+            $post->cover_image = $fileNameToStore;
+        }
+        $detail->save();
+
+        return view('/posts')->with('success', 'Updated Profile');
     }
 
     /**

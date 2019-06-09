@@ -43,23 +43,23 @@
         @endif
 
     </div>
-    <div class="col-xl-12 text-center ">
         <div class="panel panel-default text-left">
             
             
             <img class="card-img-top" src="storage/cover_images/{{$post->cover_image}}" alt="">
             
             <hr>
-            <div class="descriptionheading text-left">
+            <div class="descriptionheading text-left" style="padding:15px;">
                 <h3> {{$post->description}}</h3>
             </div>
             <hr>
-            <div clas="container" style="text-align: left;height: 200px;">
+            <div class="container" style="text-align: left;height: 200px; padding:15px;">
                 {!!$post->body!!}
             </div>
-            <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
+            <div style="padding:15px;">
+                <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
+            </div>
         </div>
-    </div>
 </div>
 
 

@@ -29,13 +29,24 @@ class PagesController extends Controller
         return view('pages.sign');
     }
     
+    //Search
+    public function search(Request $request)
+    {
+        $request->validate([
+            'query' => 'required|min:3'
+        ]);
+        $query = $request->input('query');
+        $posts = Post::where('title','like', "%$query%")->get();
+        return view('pages.search-results')->with('posts', $posts);
+    }
+    
     //Startup Dash
     public function Membership()
     {
         return view('pages.Membership');
     }
     
-    //Startup Dash
+    //Startup Settings
     public function StartupSettings()
     {
         return view('pages.StartupSettings');
