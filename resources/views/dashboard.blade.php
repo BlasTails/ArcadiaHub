@@ -67,7 +67,7 @@
                             </div>
                             <div class="col-md-10">
                                 <!--<p style="padding-left:15%"><a href="Investor_Profile.html"><strong>Rachad Risk</strong></a><br><small>Location: {{--{{$detail->address}}--}}, {{--{{$detail->country}}--}}</small></p>-->
-                                <p style="padding:2% 0% 0% 15%">Click here to view projects that other startups are developing</p>
+                                <p style="padding:2% 0% 0% 15%">Click here to publish your own project</p>
                                 <!--<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
                                 <p>{{--{{$detail->user_details}}--}}</p>
                                 <p>
