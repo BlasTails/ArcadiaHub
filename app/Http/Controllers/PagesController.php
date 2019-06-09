@@ -32,7 +32,11 @@ class PagesController extends Controller
     //Search
     public function search(Request $request)
     {
-        return view('pages.search-results');
+        $query = $request->input('query');
+        
+        $posts = Post::where('title','like', "%$query%")->get();
+        
+        return view('pages.search-results')->with('posts', $posts);
     }
     
     //Startup Dash

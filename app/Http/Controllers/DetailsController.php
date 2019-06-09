@@ -141,7 +141,7 @@ class DetailsController extends Controller
         }
         $detail->save();
 
-        return redirect('/posts')->with('success', 'Updated Profile');
+        return view('/posts')->with('success', 'Updated Profile');
     }
 
     /**
