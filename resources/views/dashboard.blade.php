@@ -81,21 +81,82 @@
                 <br/><br/><br/>
 
                 -->
-                <div class="mx-auto text-center"><h6>Like and see if they like you back</h6></div><hr/>
-
-                @if(count($details) > 0)
-                @foreach($details as $detail)
+                <!--<div class="mx-auto text-center"><h6>Like and see if they like you back</h6></div><hr/>-->
+                <div class="mx-auto text-center"><h6>Discover the perfect partnership</h6></div><hr/>
                 <div class="card card-inner">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-2">
-                                <p><img src="storage/profile_image/{{$detail->profile_image}}" class="rounded-circle img-fluid"/></p>
+                                <p><img src="storage/cover_images/pexels-photo-937481.jpeg" class="rounded-circle img-fluid"/></p>
                                 <!--<p class="text-secondary text-center">15 Minutes Ago</p>-->
                             </div>
                             <div class="col-md-10">
-                                <p><a href="Investor_Profile.html"><strong>Rachad Risk</strong></a><br><small>Location: {{$detail->address}}, {{$detail->country}}</small></p>
+                                <p><a href="Investor_Profile.html"><strong>Rachad Risk</strong></a><br><small>Location: {{--{{$detail->address}}--}}, {{--{{$detail->country}}--}}</small></p>
                                 <!--<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
-                                <p>{{$detail->user_details}}</p>
+                                <p>{{--{{$detail->user_details}}--}}</p>
+                                <p>
+                                    <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr/><div class="mx-auto text-center"><h4>Find the right Startup employee</h4></div>
+                <div class="mx-auto text-center"><h6>Create your dream team</h6></div><hr/>
+                <div class="card card-inner">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p><img src="storage/cover_images/pexels-photo-450271.jpeg" class="rounded-circle img-fluid"/></p>
+                                <!--<p class="text-secondary text-center">15 Minutes Ago</p>-->
+                            </div>
+                            <div class="col-md-10">
+                                <p><a href="Investor_Profile.html"><strong>Rachad Risk</strong></a><br><small>Location: {{--{{$detail->address}}--}}, {{--{{$detail->country}}--}}</small></p>
+                                <!--<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+                                <p>{{--{{$detail->user_details}}--}}</p>
+                                <p>
+                                    <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr/><div class="mx-auto text-center"><h4>View some Startup projects</h4></div>
+                <div class="mx-auto text-center"><h6>See whats out there</h6></div><hr/>
+                <div class="card card-inner">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p><img src="storage/cover_images/flow-chart-presentation.jpeg" class="rounded-circle img-fluid"/></p>
+                                <!--<p class="text-secondary text-center">15 Minutes Ago</p>-->
+                            </div>
+                            <div class="col-md-10">
+                                <p><a href="Investor_Profile.html"><strong>Rachad Risk</strong></a><br><small>Location: {{--{{$detail->address}}--}}, {{--{{$detail->country}}--}}</small></p>
+                                <!--<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+                                <p>{{--{{$detail->user_details}}--}}</p>
+                                <p>
+                                    <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--{{--@if(count($details) > 0)--}}
+                {{--@foreach($details as $detail)--}}
+                <div class="card card-inner">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p><img src="storage/profile_image/{{--{{$detail->profile_image}}--}}" class="rounded-circle img-fluid"/></p>
+                                --<p class="text-secondary text-center">15 Minutes Ago</p>--
+                            </div>
+                            <div class="col-md-10">
+                                <p><a href="Investor_Profile.html"><strong>Rachad Risk</strong></a><br><small>Location: {{--{{$detail->address}}--}}, {{--{{$detail->country}}--}}</small></p>
+                                --<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>--
+                                <p>{{--{{$detail->user_details}}--}}</p>
                                 <p>
                                     <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> View</a>
                                 </p>
@@ -103,13 +164,13 @@
                         </div>
                     </div>
                 </div>
-                @endforeach
+                {{--@endforeach--}}
                 {{--{{$details->links()}}--}}
-                @else
+                {{--@else--}}
                 <div class="col-xl-12 ">
                     <h2>No posts found</h2>
                 </div>
-                @endif
+                {{--@endif--}}-->
 
                 <!--<div class="row">
                     <div class="col-md-2">

@@ -3,13 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use App\Detail;
-=======
 use App\Post;
 use App\User;
 use DB;
->>>>>>> b67cc8c3ad2997e34564a09f4956a9bea20075ae
 
 class PagesController extends Controller
 {
