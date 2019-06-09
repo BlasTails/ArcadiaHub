@@ -32,10 +32,11 @@ class PagesController extends Controller
     //Search
     public function search(Request $request)
     {
+        $request->validate([
+            'query' => 'required|min:3'
+        ]);
         $query = $request->input('query');
-        
         $posts = Post::where('title','like', "%$query%")->get();
-        
         return view('pages.search-results')->with('posts', $posts);
     }
     
