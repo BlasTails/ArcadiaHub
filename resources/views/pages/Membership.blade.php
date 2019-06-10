@@ -201,8 +201,8 @@
               <li><span class="fa-li"><i class="fa fa-check"></i></span>Monthly Status Reports</li>
             </ul>-->
           </div>
-          <div class="card-footer">
-            <a href="{{URL::asset('/projects')}}" class="float-right btn text-white btn-danger"> Display Projects</a>
+          <div class="card-footer" >
+              <a href="{{URL::asset('/projects')}}" class="float-right btn text-white btn-danger"> Display Projects</a>
           </div>
         </div>
       </div>
