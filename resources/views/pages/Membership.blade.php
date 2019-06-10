@@ -33,7 +33,7 @@
     <!-- Team Members -->
       <br/><div class="mx-auto text-center"><h2 class=mx-auto my-0 text->Subscription</h2></div><br/>
 
-    <div class="row">
+    <!--<div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <img class="card-img-top" src="https://i.imgur.com/mAgZ5RV.jpg" alt="">
@@ -104,8 +104,120 @@
         </div>
       </div>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>-->
     <!-- /.row -->
+    <!--<br/><br/><br/><br/><br/><br/><br/><br/><br/>-->
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="https://cdn.stocksnap.io/img-thumbs/960w/SWRREC0K3A.jpg"" alt="">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Create your own idea!</h5>
+            <hr>
+            <h6 class="card-price text-center">Start your own Idea to have investors back you!</span></h6>
+            
+            <!--<ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Single User</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>5GB Storage</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+              <li class="text-muted"><span class="fa-li"><i class="fa fa-circle-thin"></i></span>Unlimited Private Projects</li>
+              <li class="text-muted"><span class="fa-li"><i class="fa fa-circle-thin"></i></span>Dedicated Phone Support</li>
+              <li class="text-muted"><span class="fa-li"><i class="fa fa-circle-thin"></i></span>Free Subdomain</li>
+              <li class="text-muted"><span class="fa-li"><i class="fa fa-circle-thin"></i></span>Monthly Status Reports</li>
+            </ul>-->
+          </div>
+          <div class="card-footer">
+            <a href="{{URL::asset('/posts/create')}}" class="float-right btn btn-primary" role="button" style="padding-left: 65px; padding-right: 65px">New Idea</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+          <div class="card-body">
+             <h5 class="card-title text-muted text-uppercase text-center">Find the Investor for you</h5>
+             <hr>
+            <h6 class="card-price text-center">Discover the perfect partnership</h6>
+          
+            <!--<ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>5 Users</strong></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>50GB Storage</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Unlimited Private Projects</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Dedicated Phone Support</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Free Subdomain</li>
+              <li class="text-muted"><span class="fa-li"><i class="fa fa-circle-thin"></i></span>Monthly Status Reports</li>
+            </ul>-->
+          </div>
+          <div class="card-footer">
+            <a href="{{URL::asset('/AllInvestor')}}" class="float-right btn text-white btn-danger">Display Investors</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Find the right Startup employee</h5>
+            <hr>
+            <h6 class="card-price text-center" style="padding-bottom: 10%">Create your dream team</h6>
+            
+            <!--<ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Unlimited Users</strong></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>150GB Storage</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Unlimited Private Projects</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Dedicated Phone Support</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Monthly Status Reports</li>
+            </ul>-->
+          </div>
+          <div class="card-footer">
+            <a href="{{URL::asset('/AllStartup')}}"  class="float-right btn text-white btn-danger"> Display Employees</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="https://i.imgur.com/oE2x1tv.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">View some Startup projects</h5>
+            <hr>
+            <h6 class="card-price text-center" style="padding-bottom: 10%">See whats out there</h6>
+            
+            <!--<ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Unlimited Users</strong></li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>150GB Storage</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Unlimited Public Projects</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Unlimited Private Projects</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Dedicated Phone Support</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Monthly Status Reports</li>
+            </ul>-->
+          </div>
+          <div class="card-footer">
+            <a href="{{URL::asset('/projects')}}" class="float-right btn text-white btn-danger"> Display Projects</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      </div>
+
+
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 
