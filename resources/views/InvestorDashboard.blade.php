@@ -10,7 +10,7 @@
                 
 
                 <hr/>
-                <div class="mx-auto text-center"><h4>Find the right Startup employee</h4></div>
+                <div class="mx-auto text-center"><h4>Find the right Startup Founders</h4></div>
                 <div class="mx-auto text-center"><h6>Create your dream team</h6></div><hr/>
                 <div class="card card-inner">
                     <div class="card-body">
@@ -62,7 +62,7 @@
                 </div>
 
                 <hr>
-                <div class="mx-auto text-center"><h4>Find the Investor for you</h4></div>
+                <div class="mx-auto text-center"><h4>Find Fellow Investor</h4></div>
                 <!--<div class="mx-auto text-center"><h6>Like and see if they like you back</h6></div><hr/>-->
                 <div class="mx-auto text-center"><h6>Discover the perfect partnership</h6></div><hr/>
                 <div class="card card-inner">
@@ -81,7 +81,7 @@
                                 <!--<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
                                 <p>{{--{{$detail->user_details}}--}}</p>
                                 <p>
-                                    <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display Investors</a>
+                                    <a href="{{URL::asset('/AllInvestor')}}"  class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display Investors</a>
                                 </p>
                             </div>
                         </div>
