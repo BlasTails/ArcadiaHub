@@ -28,15 +28,14 @@ class PagesController extends Controller
     {
         return view('pages.sign');
     }
-    
+
     //Search
     public function search(Request $request)
     {
-        $request->validate([
-            'query' => 'required|min:3'
-        ]);
         $query = $request->input('query');
+        
         $posts = Post::where('title','like', "%$query%")->get();
+        
         return view('pages.search-results')->with('posts', $posts);
     }
     
@@ -46,7 +45,7 @@ class PagesController extends Controller
         return view('pages.Membership');
     }
     
-    //Startup Settings
+    //Startup Dash
     public function StartupSettings()
     {
         return view('pages.StartupSettings');
@@ -72,12 +71,31 @@ class PagesController extends Controller
         return view('InvestorDashboard')->with('users', $users);
         //return view('InvestorDashboard');
     }
-    //Show profile
-    public function show($id)
+
+    public function AllStartup()
     {
-        $post = Post::find($id);
-        return view('posts.show')->with('post', $post);
+        //$users = User::all();
+        $users = DB::table('users')
+                    ->leftJoin('details', 'users.id', '=', 'details.user_id')
+                    ->leftJoin('role_user', 'users.id', '=', 'role_user.user_id')
+                    ->get();
+        return view('pages.AllStartup')->with('users', $users);
+        //return view('InvestorDashboard');
     }
+
+    public function AllInvestor()
+    {
+        //$users = User::all();
+        $users = DB::table('users')
+                    ->leftJoin('details', 'users.id', '=', 'details.user_id')
+                    ->leftJoin('role_user', 'users.id', '=', 'role_user.user_id')
+                    ->get();
+        return view('pages.AllInvestor')->with('users', $users);
+        //return view('InvestorDashboard');
+    }
+
+
+    
     
      //Admin Dash
     public function admin()

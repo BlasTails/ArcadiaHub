@@ -76,3 +76,5 @@ Route::get('/InvestorDashboard', function () {
 //Route to Investor Profile
 Route::get('/InvestorProfile', 'PagesController@InvestorProfile');
 
+Route::get('/AllStartup', 'PagesController@AllStartup');
+Route::get('/AllInvestor', 'PagesController@AllInvestor');
