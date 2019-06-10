@@ -2,8 +2,30 @@
 @section('content')
 
 <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Projects
+            <small></small>
+    </h1>
+    
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="{{URL::asset('/dashboard')}}">Dashboard</a>
+    </li>
+    <li class="breadcrumb-item">
+        <a href="{{URL::asset('/AllInvestor')}}">Investors</a>
+    </li>
+    <li class="breadcrumb-item">
+            <a href="{{URL::asset('/AllStartup')}}">Startup Employees</a>
+    </li>
+    <li class="breadcrumb-item active">
+            <a href="{{URL::asset('/projects')}}">Projects</a>
+    </li>
+    </ol>
+
     <div class="row" style="padding-bottom:15px">
-        <h1>Projects</h1>
+        <!--<h1>Projects</h1>-->
+        <br/><div class="mx-auto text-center"><h2 class=mx-auto my-0 text->Select Below:</h2></div><br/>
         <div class="row" style="padding-top:50px">
             @if(count($posts) > 0)
             @foreach($posts as $post)
