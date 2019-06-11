@@ -3,7 +3,7 @@
 <div class="container">
     <div calss="row">
         <div class="col-md-12 text-center">
-            <h1>New Idea</h1>
+            <h1>New Startup</h1>
         </div>
     </div><hr>
     {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}

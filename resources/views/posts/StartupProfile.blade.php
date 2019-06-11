@@ -18,9 +18,9 @@
         <div class="col-md-4 col-sm-12 pull-right">
             <div class="panel panel-default" style="margin-bottom: 5px">
                 <div class="panel-heading">
-                <h1 class="page-header small"style="text-align:center">Start a new Idea</h1>
+                <h1 class="page-header small"style="text-align:center">Start a new Startup</h1>
                     <div id="wrapper">
-                        <a href="{{URL::asset('/posts/create')}}" class="btn btn-primary" role="button" style="padding-left:50px; padding-right:50px;"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a>
+                        <a href="{{URL::asset('/posts/create')}}" class="btn btn-primary" role="button" style="padding-left:50px; padding-right:50px;"><i class="fa fa-plus-square" aria-hidden="true"></i> New Startup</a>
                     </div>
                 </div>
                 <div class="clearfix"></div>

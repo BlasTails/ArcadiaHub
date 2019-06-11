@@ -73,7 +73,7 @@
                                 <p>
                                     <!--<a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display Projects</a>-->
                                     <!--<a href="{{--{{URL::asset('/posts/create')}}--}}" class="float-right btn btn-primary" role="button" style="padding-left: 50px; padding-right: 50px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a>-->
-                                    <a href="{{URL::asset('/posts/create')}}" class="float-right btn btn-primary" role="button" style="padding-left: 65px; padding-right: 65px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a>
+                                    <a href="{{URL::asset('/posts/create')}}" class="float-right btn btn-primary" role="button" style="padding-left: 65px; padding-right: 65px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Startup</a>
                                 </p>
                             </div>
                         </div>
