@@ -26,6 +26,7 @@ Route::get('/StartupProfile', 'HomeController@StartupProfile');
 Route::get('/create', 'HomeController@create');
 */
 
+
 Route::get('/StartupSettings', 'PagesController@settings');
 Route::get('/search', 'PagesController@search')->name('search');
 Route::get('/','PagesController@index');
@@ -67,6 +68,7 @@ Route::resource('detail', 'DetailsController');
 
 // Route for startup dashboard
 Route::get('/dashboard', 'DashboardController@index');
+Route::get('/dashboard2', 'DashboardController@index');
 
 //Route to Investor Dashboard
 Route::get('/InvestorDashboard', function () {
