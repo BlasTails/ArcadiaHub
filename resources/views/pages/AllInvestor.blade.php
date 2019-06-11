@@ -111,7 +111,7 @@
     <div class="card h-100 text-center">
       <img class="card-img-top" src="https://i.imgur.com/oE2x1tv.jpg" alt="">
       <div class="card-body">
-        <h5 class="card-title text-muted text-uppercase text-center">View some Startup projects</h5>
+        <h5 class="card-title text-muted text-uppercase text-center">View some Startup </h5>
         <hr>
         <h6 class="card-price text-center" style="padding-bottom: 10%">See whats out there</h6>-->
         

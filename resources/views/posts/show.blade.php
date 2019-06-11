@@ -25,7 +25,7 @@
                         </div>
                         <!-- Modal body -->
                         <div class="modal-body">
-                            <p>Are you sure you want to delete this Project?</p>
+                            <p>Are you sure you want to delete this Startup?</p>
                         </div>
                         <!-- Modal footer -->
                         <div class="modal-footer">

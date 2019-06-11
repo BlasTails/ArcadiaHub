@@ -10,6 +10,6 @@
 </div>
 @endforeach
 @else
-<p>No Project found</p>
+<p>No Startups found</p>
 @endif
 @endsection

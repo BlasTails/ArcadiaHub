@@ -19,7 +19,7 @@
             <a href="{{URL::asset('/AllStartup')}}">Startup Employees</a>
     </li>
     <li class="breadcrumb-item">
-            <a href="{{URL::asset('/projects')}}">Projects</a>
+            <a href="{{URL::asset('/projects')}}">Startups</a>
     </li>
     </ol>
 

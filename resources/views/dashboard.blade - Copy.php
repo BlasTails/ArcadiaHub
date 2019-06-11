@@ -71,7 +71,7 @@
                                 <!--<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
                                 <p>{{--{{$detail->user_details}}--}}</p>
                                 <p>
-                                    <!--<a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display Projects</a>-->
+                                    <!--<a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Display</a>-->
                                     <!--<a href="{{--{{URL::asset('/posts/create')}}--}}" class="float-right btn btn-primary" role="button" style="padding-left: 50px; padding-right: 50px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a>-->
                                     <a href="{{URL::asset('/posts/create')}}" class="float-right btn btn-primary" role="button" style="padding-left: 65px; padding-right: 65px"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a>
                                 </p>

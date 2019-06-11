@@ -4,7 +4,7 @@
 <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Projects
+    <h1 class="mt-4 mb-3">Startup
             <small></small>
     </h1>
     
@@ -19,7 +19,7 @@
             <a href="{{URL::asset('/AllStartup')}}">Startup Employees</a>
     </li>
     <li class="breadcrumb-item active">
-            <a href="{{URL::asset('/projects')}}">Projects</a>
+            <a href="{{URL::asset('/projects')}}">Startups</a>
     </li>
     </ol>
 

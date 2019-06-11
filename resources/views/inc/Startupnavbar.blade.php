@@ -38,7 +38,7 @@
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="nav-link js-scroll-trigger" href="{{URL::asset('/posts')}}"><i class="fa fa-address-book" aria-hidden="true"></i> Profile</a>
-                    <a class="nav-link js-scroll-trigger" href="{{URL::asset('/StartupContacts')}}"><i class="fa fa-envelope" aria-hidden="true"></i> Contacts</a>
+                    <a class="nav-link js-scroll-trigger" href="{{URL::asset('/posts')}}"><i class="fa fa-envelope" aria-hidden="true"></i> Contacts</a>
                     <a class="nav-link js-scroll-trigger" href="{{URL::asset('/StartupSettings')}}"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
 
                     <a class="dropdown-item" href="{{ route('logout') }}"
