@@ -47,7 +47,7 @@
     
     <div class="row">
         <div class="col-sm-6 text-center" style="padding-top: 15px">
-            <a href="/test/public/posts/{{$post->id}}" class="btn btn-secondary" role="button" >Cancel</a>       
+            <a href="/posts/{{$post->id}}" class="btn btn-secondary" role="button" >Cancel</a>       
         </div>
         
         
