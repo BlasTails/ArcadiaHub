@@ -79,7 +79,7 @@
                         <h5 class="card-title text-muted text-uppercase text-center"><a href="detail/{{$user->user_id}}">{{$user->name}}</a></h5>
                         <hr>
                         <h6 class="card-price text-center" style="padding-bottom: 10%"><small>Location: {{$user->country}}</small></h6>
-                        <p>{!!$user->user_details!!}</p>
+                        <!--<p>{!!$user->user_details!!}</p>-->
                       </div>
                       <div class="card-footer">
                         <a href="detail/{{$user->user_id}}" class="float-center btn text-white btn-danger"> View</a>
