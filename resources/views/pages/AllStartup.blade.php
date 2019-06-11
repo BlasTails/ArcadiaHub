@@ -25,7 +25,7 @@
 
     <div class="row" style="padding-bottom:15px">
         <!--<h1>Start Ups</h1>-->
-        <br/><div class="mx-auto text-center"><h2 class=mx-auto my-0 text->Select Below:</h2></div><br/>
+        <!--<br/><div class="mx-auto text-center"><h2 class=mx-auto my-0 text->Select Below:</h2></div><br/>-->
 	    <div class="card-body">
                 {{--@if(count($users) > 0)
                 @foreach($users as $user)

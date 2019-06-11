@@ -26,8 +26,8 @@
           <div class="container-banner">
             <div class="col-lg-12 text-center">
                 <!--<div class="panel panel-default">-->
-                  <h2 class="section-heading">Create your own idea!</h2>
-                  <h3 class="section-subheading text-muted">Start your own Idea to have investors back you!</h3>
+                  <h2 class="section-heading" style="font-family: Arial, Helvetica, sans-serif">Welcome {{ Auth::user()->name }}, Create your own idea!</h2>
+                  <h3 class="section-subheading text-muted" style="font-family: Verdana,Geneva,sans-serif; font-size: 20px;">Start your own Idea to have investors back you!</h3>
                   <p>Click here to publish your own project</p>
                   <a href="{{URL::asset('/posts/create')}}" class="btn btn-primary" role="button" style="padding-left: 65px; padding-right: 65px; margin: 5px;"><i class="fa fa-plus-square" aria-hidden="true"></i> New Idea</a> 
                   <br/><br/>    
