@@ -37,7 +37,7 @@
                 </div>
 
                 <hr/>
-                <div class="mx-auto text-center"><h4>View some Startup projects</h4></div>
+                <div class="mx-auto text-center"><h4>View some Startups</h4></div>
                 <div class="mx-auto text-center"><h6>See whats out there</h6></div><hr/>
                 <div class="card card-inner">
                     <div class="card-body">
@@ -51,7 +51,7 @@
                             </div>
                             <div class="col-md-10">
                                 <!--<p style="padding-left:15%"><a href="Investor_Profile.html"><strong>Rachad Risk</strong></a><br><small>Location: {{--{{$detail->address}}--}}, {{--{{$detail->country}}--}}</small></p>-->
-                                <p style="padding:2% 0% 0% 15%">Click here to view projects that other startups are developing</p>
+                                <p style="padding:2% 0% 0% 15%">Click here to view Startups that other Employees are developing</p>
                                 <!--<p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
                                 <p>{{--{{$detail->user_details}}--}}</p>
                                 <p>

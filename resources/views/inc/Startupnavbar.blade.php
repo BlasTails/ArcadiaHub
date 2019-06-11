@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="padding-left:21%;">
-    <a class="navbar-brand" href="{{URL::asset('/startup')}}">ArcadiaHub</a>
+    <a class="navbar-brand" href="{{URL::asset('/startup')}}">ArcadiaHub - Startup</a> 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
