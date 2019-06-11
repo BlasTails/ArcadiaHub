@@ -1,6 +1,6 @@
 @extends('layouts.Startupapp')
 @section('content')
-
+<body class="hm-gradient">
 <div class="container">
     
     
@@ -72,5 +72,5 @@
         </div>      
     </div>
 </div>
-
+</body>
 @endsection

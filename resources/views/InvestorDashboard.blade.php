@@ -1,5 +1,6 @@
 @extends('layouts.Investorapp')
 @section('content')
+<body class="hm-gradient">
 <div class="container">
     <div class="card-body">
         <div class="card card-inner">
@@ -88,5 +89,4 @@
                     </div>
                 </div>
 </div>
-
 @endsection

@@ -1,6 +1,6 @@
 @extends('layouts.Startupapp')
 @section('content')
-
+<body class="hm-gradient">
 <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
@@ -104,7 +104,7 @@
     </div>	
     
 </div>
-
+</body>
 @endsection
 
 <!--<div class="col-sm-3">

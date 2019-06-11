@@ -1,5 +1,6 @@
 @extends('layouts.Investorapp')
 @section('content')
+<body class="hm-gradient">
 <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
@@ -96,4 +97,5 @@
 	    </div>
     </div>	
 </div>
+</body>
 @endsection
