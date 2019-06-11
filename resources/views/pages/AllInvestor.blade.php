@@ -15,10 +15,10 @@
     <li class="breadcrumb-item active">
         <a href="{{URL::asset('/AllInvestor')}}">Investors</a>
     </li>
-    <li class="breadcrumb-item active">
+    <li class="breadcrumb-item">
             <a href="{{URL::asset('/AllStartup')}}">Startup Employees</a>
     </li>
-    <li class="breadcrumb-item active">
+    <li class="breadcrumb-item">
             <a href="{{URL::asset('/projects')}}">Projects</a>
     </li>
     </ol>
